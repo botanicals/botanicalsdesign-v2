@@ -5,7 +5,7 @@ $default-section-width: 1600px; // this is limiting the width of the page conten
 $default-section-horizontal-padding: 5%;
 $full-section-width: 100%;
 $height-of-header: 10rem; // height of the header containing navigation and logo
-$half-height-of-header: $height-of-header / 2;
+$half-height-of-header: calc($height-of-header / 2);
 $height-of-hero-image: 600px; // this is the height of the hero image -- matches the image size
 
 // GRID VARIABLES
@@ -21,12 +21,7 @@ $color-primary-orange: #f4a702;
 $color-black: #000;
 $color-white: #fff;
 $color-light-gray: rgb(179, 179, 179);
-$header-banner-color: rgba(
-  0,
-  0,
-  0,
-  0.85
-); // this is for adjusting the opacity of the header and banner in header.php
+$header-banner-color: rgba(0, 0, 0, 0.85); // this is for adjusting the opacity of the header and banner in header.php
 
 // FONT SIZE
 $font-size-default: 1.6rem;

@@ -10,7 +10,7 @@
 
 @media (max-width: 1100px) {
   // positioning the header back into the center
-  &.header__logo {
+  .header__logo {
     top: $half-height-of-header;
   }
 

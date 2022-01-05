@@ -1,15 +1,15 @@
-import React from "react"
+import React from 'react';
 
-import "../styles/main.scss"
+// import "../styles/main.scss"
 
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import TopNotificationBanner from "../components/TopNotificationBanner"
-import HeroPageBanner from "../components/HeroPageBanner"
-import ContentContainer from "../components/ContentContainer"
-import CtaBanner from "../components/CtaBanner"
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import TopNotificationBanner from '../components/TopNotificationBanner';
+import HeroPageBanner from '../components/HeroPageBanner';
+import ContentContainer from '../components/ContentContainer';
+import CtaBanner from '../components/CtaBanner';
 
-import SEO from "../components/SEO"
+import SEO from '../components/SEO';
 
 function PageLayout(props) {
   return (
@@ -27,12 +27,10 @@ function PageLayout(props) {
         altImage={props.altImage}
       />
       {props.cta ? <CtaBanner data={props.cta} /> : null}
-      <ContentContainer pageHeading={props.pageHeading}>
-        {props.children}
-      </ContentContainer>
+      <ContentContainer pageHeading={props.pageHeading}>{props.children}</ContentContainer>
       <Footer />
     </>
-  )
+  );
 }
 
-export default PageLayout
+export default PageLayout;
