@@ -2,11 +2,11 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: 'Gibby Floral | Occasions, Home, and Garden since 1956',
-    description:
-      'We have been providing the community with beautiful floral designs since 1956, and we’re excited to continue to help you with your special occasions, weddings, memorials, and just something special for the one you love.',
-    imagePath: `/gibbyfloral.jpg`,
-    siteUrl: 'https://www.gibbyfloral.com',
+    title: 'Botanicals Design',
+    description: 'BOTANICALS offers custom plantscape design and installations, plant maintenance services, and three retail locations selling pottery, containers, and yard decor.',
+    imagePath: '/heroes/home-small-1x.jpg',
+    baseUrl: 'https://botanicalsdesign.com',
+    siteUrl: 'https://botanicalsdesign.com',
   },
   plugins: [
     'gatsby-plugin-netlify-cms',
@@ -28,29 +28,25 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-postcss',
+    `gatsby-plugin-sass`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-cloudinary`,
       options: {
-        name: 'images',
-        path: './src/images/',
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: `image`,
+        maxResults: 100,
+        context: true,
+        tags: true,
       },
-      __key: 'images',
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'posts',
-        path: './content/posts/',
+        name: `src`,
+        path: `${__dirname}/src`,
       },
-      __key: 'posts',
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'pages',
-        path: './content/pages/',
-      },
-      __key: 'pages',
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -60,5 +56,11 @@ module.exports = {
         plugins: [],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-facebook-pixel`,
+    //   options: {
+    //     pixelId: "1242267082891853",
+    //   },
+    // },
   ],
 };

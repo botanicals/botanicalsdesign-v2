@@ -1,15 +1,21 @@
 import React from "react"
 
-const Section = ({ children, customClassName }) => {
+function Section(props) {
   return (
     <section
-      className={`${
-        !customClassName
-          ? "max-w-7xl bg-white mx-auto px-8 pb-16 pt-2 md:py-16"
-          : customClassName
-      }`}
+      className={props.fullWidth ? "section section--full-width" : "section"}
     >
-      {children}
+      {props.fullWidth ? (
+        <div className="section__full-width-content-container">
+          <h2 className="heading heading__h2">{props.sectionHeading}</h2>
+          {props.children}
+        </div>
+      ) : (
+        <>
+          <h2 className="heading heading__h2">{props.sectionHeading}</h2>
+          {props.children}
+        </>
+      )}
     </section>
   )
 }

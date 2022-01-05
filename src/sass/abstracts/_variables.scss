@@ -1,0 +1,36 @@
+// BEGIN VARIABLES //
+
+// LAYOUT VARIABLES
+$default-section-width: 1600px; // this is limiting the width of the page content that will be created in wordpress
+$default-section-horizontal-padding: 5%;
+$full-section-width: 100%;
+$height-of-header: 10rem; // height of the header containing navigation and logo
+$half-height-of-header: $height-of-header / 2;
+$height-of-hero-image: 600px; // this is the height of the hero image -- matches the image size
+
+// GRID VARIABLES
+// -- note -- the grid is mostly used for the columns in the footer - be mindful of the footer when making changes
+$grid-width: 100%;
+$gutter-vertical: 2rem; // vertical grid gap between rows
+$gutter-horizontal: 0.5rem; // horizontal grid gap between rows
+
+// COLOR VARIABLES
+$color-primary-red: #89231e;
+$color-primary-green: #9eca3c;
+$color-primary-orange: #f4a702;
+$color-black: #000;
+$color-white: #fff;
+$color-light-gray: rgb(179, 179, 179);
+$header-banner-color: rgba(
+  0,
+  0,
+  0,
+  0.85
+); // this is for adjusting the opacity of the header and banner in header.php
+
+// FONT SIZE
+$font-size-default: 1.6rem;
+$font-size-body: 2rem; // not positive what this variable is for -- figure it out
+$font-size-paragraph: 2.2rem;
+
+// END VARIABLES //

@@ -1,5 +1,5 @@
-# Gibby Floral V2
+# Botanicals Design V2
 
-This is the source code for gibbyfloral.com v2.
+This is the source code for botanicalsdesign.com v2.
 
-GIBBY FLORAL has been providing the community with beautiful floral designs since 1956.
+BOTANICALS offers custom plantscape design and installations, plant maintenance services, and operates three retail locations selling pottery, containers, and yard decor.
