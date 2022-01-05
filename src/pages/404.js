@@ -1,54 +1,28 @@
-import * as React from "react"
+import React from "react"
 import { Link } from "gatsby"
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import PageLayout from "../layouts/PageLayout"
+import Section from "../components/section"
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-// markup
-const NotFoundPage = () => {
-  return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+const NotFoundPage = () => (
+  <PageLayout metadata={{ title: "Page not found | Gibby Floral" }}>
+    <Section>
+      <div className="py-8">
+        <div className="text-center">
+          <p className="subheading">404 error</p>
+          <h1 className="heading text-4xl sm:text-5xl">Page not found</h1>
+          <p className="mt-2 text-gray-900">
+            Sorry, we couldn’t find the page you’re looking for.
+          </p>
+          <div className="mt-6">
+            <Link to="/" className="link-button">
+              Go back home<span aria-hidden="true"> &rarr;</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </Section>
+  </PageLayout>
+)
 
 export default NotFoundPage

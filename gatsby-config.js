@@ -5,6 +5,7 @@ module.exports = {
     title: 'Gibby Floral | Occasions, Home, and Garden since 1956',
     description:
       'We have been providing the community with beautiful floral designs since 1956, and we’re excited to continue to help you with your special occasions, weddings, memorials, and just something special for the one you love.',
+    imagePath: `/gibbyfloral.jpg`,
     siteUrl: 'https://www.gibbyfloral.com',
   },
   plugins: [
@@ -24,9 +25,9 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -51,7 +52,6 @@ module.exports = {
       },
       __key: 'pages',
     },
-    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
