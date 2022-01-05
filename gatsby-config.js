@@ -52,5 +52,13 @@ module.exports = {
       __key: 'pages',
     },
     'gatsby-plugin-postcss',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        footnotes: true,
+        gfm: true,
+        plugins: [],
+      },
+    },
   ],
 };
