@@ -1,9 +1,0 @@
-// BEGIN MIXINS //
-@mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-// END MIXINS //
