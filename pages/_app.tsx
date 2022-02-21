@@ -1,9 +1,8 @@
-import '../styles/globals.css';
-
 import Head from 'next/head';
 import { useEffect } from 'react';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
+import { AppProps } from 'next/app';
 
 import { DefaultSeo } from 'next-seo';
 
@@ -13,11 +12,11 @@ import { attributes as global } from '../content/settings/global.md';
 
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = url => {
+    const handleRouteChange = (url: any) => {
       gtag.pageview(url);
     };
     router.events.on('routeChangeComplete', handleRouteChange);
@@ -33,7 +32,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       {/* Global site metadata */}
       <DefaultSeo
-        titleTemplate={`%s | ${global.siteTitle}`}
+        // titleTemplate={`%s | ${global.siteTitle}`}
         defaultTitle={global.defaultMetadata.title}
         description={global.defaultMetadata.description}
         openGraph={{

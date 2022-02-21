@@ -2,7 +2,23 @@ import { NextSeo } from 'next-seo';
 
 import { attributes as global } from '../../content/settings/global.md';
 
-const Seo = ({ metadata }) => {
+export interface Metadata {
+  title: string;
+  slug: string;
+  description?: string;
+  shareImage?: {
+    url: string;
+  };
+  twitterCardType?: 'summary' | 'summary_large_image' | 'app' | 'player';
+  twitterUsername?: string;
+  titleOverwrite?: boolean;
+}
+
+interface SeoProps {
+  metadata: Metadata;
+}
+
+const Seo: React.FC<SeoProps> = ({ metadata }) => {
   const { siteTitle } = global;
 
   // Prevent errors if no metadata was set
@@ -14,7 +30,7 @@ const Seo = ({ metadata }) => {
       description={metadata.description}
       openGraph={{
         // Title and description are mandatory
-        title: `${metadata.title} | ${siteTitle}`,
+        title: metadata.titleOverwrite ? `${metadata.title}` : `${metadata.title} | ${siteTitle}`,
         description: metadata.description,
         // Only include OG image if it exists
         ...(metadata.shareImage && {

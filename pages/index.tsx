@@ -1,9 +1,16 @@
 import ErrorPage from 'next/error';
 
 import PageLayout from '../layouts/PageLayout';
+import { Metadata } from '../layouts/components/Seo';
+
 import Sections from '../components/sections';
 
-const Home = ({ metadata, sections }) => {
+interface IndexPageProps {
+  metadata: Metadata;
+  sections: any[];
+}
+
+const IndexPage: React.FC<IndexPageProps> = ({ metadata, sections }) => {
   // Check if the required data was provided
   if (!sections?.length) {
     return <ErrorPage statusCode={500} />;
@@ -19,6 +26,8 @@ const Home = ({ metadata, sections }) => {
 export async function getStaticProps() {
   const page = await import('../content/pages/index.md').catch(error => null);
 
+  if (!page) return { props: {} };
+
   const { name, metadata, sections = [] } = page.attributes;
 
   return {
@@ -29,4 +38,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Home;
+export default IndexPage;
