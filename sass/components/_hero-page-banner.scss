@@ -16,15 +16,6 @@
     position: absolute;
     bottom: 0;
   }
-
-  &--alt {
-    margin-top: -$height-of-header;
-    height: $height-of-hero-image;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
 }
 
 .page-banner {
@@ -59,16 +50,6 @@
     color: $color-white;
     text-transform: uppercase;
     font-weight: 400;
-
-    &--alt {
-      margin: 2rem 0 1rem 0;
-
-      color: $color-primary-green;
-
-      text-transform: none;
-      font-weight: bold;
-      font-size: 2.4rem;
-    }
   }
 }
 

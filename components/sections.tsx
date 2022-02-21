@@ -1,12 +1,20 @@
 import { Fragment } from 'react';
 
 import ContentSection from './sections/content';
+import GallerySection from './sections/gallery';
 import ImageSection from './sections/image';
+import LocationsSection from './sections/locations';
+import NewsletterSection from './sections/newsletter';
+import PortfoliosSection from './sections/portfolios';
 
 // Map object keys to section components
 const sectionComponents: { [key: string]: React.FC<any> } = {
   content: ContentSection,
   image: ImageSection,
+  gallery: GallerySection,
+  locations: LocationsSection,
+  portfolios: PortfoliosSection,
+  newsletter: NewsletterSection,
 };
 
 // Display a section individually

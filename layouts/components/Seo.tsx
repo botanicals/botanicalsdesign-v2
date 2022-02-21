@@ -19,19 +19,21 @@ interface SeoProps {
 }
 
 const Seo: React.FC<SeoProps> = ({ metadata }) => {
-  const { siteTitle } = global;
+  const { siteTitle, defaultMetadata } = global;
 
   // Prevent errors if no metadata was set
   if (!metadata) return null;
 
+  const title = metadata.titleOverwrite ? `${metadata.title}` : `${metadata.title} | ${siteTitle}`;
+
   return (
     <NextSeo
-      title={metadata.title}
-      description={metadata.description}
+      title={title}
+      description={metadata.description || defaultMetadata.description}
       openGraph={{
         // Title and description are mandatory
-        title: metadata.titleOverwrite ? `${metadata.title}` : `${metadata.title} | ${siteTitle}`,
-        description: metadata.description,
+        title,
+        description: metadata.description || defaultMetadata.description,
         // Only include OG image if it exists
         ...(metadata.shareImage && {
           images: [
