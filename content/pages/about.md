@@ -1,6 +1,5 @@
 ---
 name: About
-parent: ''
 sections:
   - type: content
     content: >-

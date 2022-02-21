@@ -173,3 +173,117 @@ collections:
               { label: 'Twitter Card Type', name: 'twitterCardType', widget: 'select', options: ['summary', 'summary_large_image', 'app', 'player'], required: false },
             ],
         }
+
+  # Blog Posts
+  - name: 'posts'
+    label: 'Posts'
+    label_singular: Post
+    summary: '{{name}}'
+    identifier_field: metadata.slug
+    create: true
+    folder: content/posts
+    fields:
+      # State
+      - { label: 'State', name: 'state', widget: 'select', options: ['Draft', 'Published'], default: 'Draft' }
+
+      # Name
+      - { label: 'Name', name: 'name', widget: 'string' }
+
+      # Author
+      - { label: 'Author', name: 'author', widget: 'select', options: ['Botanicals Design', 'Nicole Hancock', 'Darren Edwards', 'Talon Durrant'] }
+
+      # Publish Date
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+
+      # Categories
+      - {
+          label: 'Categories',
+          name: 'categories',
+          widget: 'relation',
+          collection: 'categories',
+          multiple: true,
+          search_fields: ['metadata.slug'],
+          value_field: '{{metadata.title}}__{{metadata.slug}}__{{color}}',
+          display_fields: ['name'],
+        }
+
+      # Related Posts
+      - {
+          label: 'Related Posts',
+          name: 'relatedPosts',
+          widget: 'relation',
+          collection: 'posts',
+          multiple: true,
+          required: false,
+          search_fields: ['metadata.slug'],
+          value_field: metadata.slug,
+          display_fields: ['name'],
+        }
+
+      # Featured Post
+      - { label: 'Featured', name: 'featured', widget: 'boolean', default: false }
+
+      # Excerpt
+      - { label: 'Excerpt', name: 'excerpt', widget: 'text' }
+
+      # Content
+      - { label: Content, name: body, widget: markdown }
+
+      # Metadata
+      - {
+          label: 'Metadata',
+          name: 'metadata',
+          widget: 'object',
+          fields:
+            [
+              { label: 'Title', name: 'title', widget: 'string' },
+              { label: 'Slug', name: slug, widget: string },
+              { label: 'Description', name: 'description', widget: 'text' },
+              { label: 'Share Image', name: 'shareImage', widget: 'image', required: false },
+              { label: 'Twitter Username', name: 'twitterUsername', widget: 'string', required: false },
+              { label: 'Twitter Card Type', name: 'twitterCardType', widget: 'select', options: ['summary', 'summary_large_image', 'app', 'player'], required: false },
+            ],
+        }
+
+  # Post Categories
+  - name: 'categories'
+    label: 'Categories'
+    label_singular: 'Category'
+    identifier_field: name
+    create: true
+    folder: /content/categories
+    fields:
+      # Name
+      - { label: 'Name', name: 'name', widget: 'string' }
+
+      # Color
+      - { label: 'Color', name: 'color', widget: 'color' }
+
+      # Featured Posts
+      - {
+          label: 'Featured Posts',
+          name: 'featuredPosts',
+          widget: 'relation',
+          collection: 'posts',
+          multiple: true,
+          required: false,
+          search_fields: ['metadata.slug'],
+          value_field: '{{metadata.title}}__{{metadata.slug}}',
+          display_fields: ['name'],
+        }
+
+      # Metadata
+      - {
+          label: 'Metadata',
+          name: 'metadata',
+          widget: 'object',
+          fields:
+            [
+              { label: 'Title', name: 'title', widget: 'string' },
+              { label: 'Slug', name: slug, widget: string },
+              { label: 'Description', name: 'description', widget: 'text' },
+              { label: 'Share Image', name: 'shareImage', widget: 'image', required: false },
+              { label: 'Twitter Username', name: 'twitterUsername', widget: 'string', required: false },
+              { label: 'Twitter Card Type', name: 'twitterCardType', widget: 'select', options: ['summary', 'summary_large_image', 'app', 'player'], required: false },
+            ],
+        }
