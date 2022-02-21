@@ -93,8 +93,6 @@ export const getStaticProps: GetStaticProps = async context => {
 
   const { name, heading, hero, parent, metadata, sections = [] } = pageData.attributes;
 
-  console.log({ hero });
-
   return {
     props: {
       name,
