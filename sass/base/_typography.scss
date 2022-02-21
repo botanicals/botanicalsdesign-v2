@@ -1,0 +1,172 @@
+// BEGIN CODE COMPILED FROM _TYPOGRAPHY.SCSS //
+@import url("https://p.typekit.net/p.css?s=1&k=vhr8hcq&ht=tk&f=10884.10886&a=28689969&app=typekit&e=css");
+
+@font-face {
+  font-family: "futura-pt";
+  src: url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "futura-pt";
+  src: url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?subset_id=2&fvd=n3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?subset_id=2&fvd=n3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?subset_id=2&fvd=n3&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+}
+
+body {
+  font-size: $font-size-default;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+form input,
+form textarea {
+  font-family: "futura-pt", sans-serif;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: $font-size-paragraph;
+  letter-spacing: 0;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: lighten($color-primary-red, 10%);
+  font-weight: 300;
+
+  &:hover {
+    text-decoration: underline;
+    color: lighten($color-primary-red, 5%);
+  }
+}
+
+.heading {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 1rem 0;
+
+  &__quote {
+    margin: 3rem 0;
+    line-height: 1.1;
+    letter-spacing: 0;
+    background-color: rgb(243, 241, 241);
+    padding: 3rem 1.5rem;
+    position: relative;
+    text-align: center;
+
+    // &::after {
+    //   content: "\201D";
+    //   font-family: serif, monospace;
+    //   position: absolute;
+    //   bottom: -2rem;
+    //   right: 0;
+    //   //transform: rotate(10deg);
+    //   font-size: 15rem;
+    //   line-height: 0;
+    // }
+
+    // &::before {
+    //   content: "\201C";
+    //   font-family: serif, Courier, monospace;
+    //   //position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   font-size: 4rem;
+    //   line-height: 0;
+    // }
+  }
+
+  &__h1 {
+    font-size: 6rem;
+    color: $color-primary-red;
+
+    &--green {
+      color: $color-primary-green;
+    }
+  }
+
+  &__h2 {
+    font-size: 4rem;
+    color: $color-primary-orange;
+    margin: 2rem 0;
+
+    &--green {
+      color: $color-primary-green;
+    }
+
+    &--red {
+      color: $color-primary-red;
+    }
+  }
+
+  &__h3 {
+    font-size: 3rem;
+    &--green {
+      color: $color-primary-green;
+    }
+    &--red {
+      color: $color-primary-red;
+    }
+    &--orange {
+      color: $color-primary-orange;
+    }
+  }
+
+  &__h4 {
+    font-size: 2.5rem;
+    &--green {
+      color: $color-primary-green;
+    }
+    &--red {
+      color: $color-primary-red;
+    }
+  }
+
+  &__h5 {
+    font-size: 2rem;
+
+    &--orange {
+      color: $color-primary-orange;
+    }
+
+    &--green {
+      color: $color-primary-green;
+    }
+
+    &--red {
+      color: $color-primary-red;
+    }
+    color: $color-primary-green;
+  }
+
+  &__h6 {
+    font-size: $font-size-default;
+    &--green {
+      color: $color-primary-green;
+    }
+    &--red {
+      color: $color-primary-red;
+    }
+  }
+}
+
+// END TYPOGRAPHY CODE //

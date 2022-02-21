@@ -1,0 +1,27 @@
+// BEGIN CODE COMPIILED FROM _UTILITIES.SCSS //
+
+.u-change-height {
+  height: 14rem;
+}
+
+.u-hover-link:hover {
+  color: darken($color-primary-green, 15%);
+}
+
+.u-default-font-size {
+  font-size: $font-size-default;
+}
+
+.u-uppercase-transform {
+  text-transform: uppercase;
+  &--small {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  }
+}
+
+.u-color-red {
+  color: $color-primary-red;
+}
+
+// END UTILITIES CODE //

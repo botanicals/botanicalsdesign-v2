@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-// import Link from 'next/link';
+import Link from 'next/link';
 
 // import { XIcon } from '@heroicons/react/outline';
 
@@ -12,9 +12,18 @@ const Banner = () => {
   //   return null;
   // }
 
-  const { siteBanner } = global;
+  // const { siteBanner } = global;
 
-  return <div>{JSON.stringify(siteBanner)}</div>;
+  return (
+    <div className="top-notification-banner">
+      <p>
+        Botanicals has recently opened a new retail location in Kaysville, Utah!{' '}
+        <Link href="/locations/kaysville">
+          <a>Visit the new page to learn more.</a>
+        </Link>
+      </p>
+    </div>
+  );
 };
 
 export default Banner;

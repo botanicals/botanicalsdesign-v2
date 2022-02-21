@@ -1,0 +1,75 @@
+// BEGIN CODE COMPILED FROM _HERO-PAGE-BANNER.SCSS //
+
+.hero-image-container {
+  position: relative;
+
+  &__image {
+    margin-top: -$height-of-header;
+    min-height: $height-of-hero-image;
+    width: 100%;
+  }
+
+  &__page-banner {
+    background-color: $header-banner-color;
+    padding: 2rem 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &--alt {
+    margin-top: -$height-of-header;
+    height: $height-of-hero-image;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+.page-banner {
+  &__container {
+    max-width: $default-section-width;
+    margin: 0 auto;
+    padding: 0 $default-section-horizontal-padding;
+
+    &--alt {
+      text-align: center;
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__main-heading {
+    font-size: 7rem;
+    letter-spacing: 8px;
+    margin-bottom: 1rem;
+    color: $color-primary-green;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &__sub-heading {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    &--alt {
+      margin: 2rem 0 1rem 0;
+
+      color: $color-primary-green;
+
+      text-transform: none;
+      font-weight: bold;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+// END HERO-PAGE-BANNER CODE

@@ -1,0 +1,32 @@
+// BEGIN CODE COMPILED FROM _HEADER.SCSS //
+
+.header {
+  background-color: $header-banner-color;
+  z-index: 1; // makes the header in front of the banner image
+  position: relative;
+  height: $height-of-header;
+}
+
+.header__logo {
+  // positioning the header logo
+  position: absolute;
+  z-index: -9999999999999;
+
+  &--desktop {
+    z-index: 99;
+    transform: translate(0, -50%);
+    display: block;
+    left: 4rem;
+    top: $half-height-of-header;
+  }
+
+  &--mobile {
+    display: none;
+  }
+
+  &--mobile-image {
+    width: 90vw;
+  }
+}
+
+// END HEADER CODE //
