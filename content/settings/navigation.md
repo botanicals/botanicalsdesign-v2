@@ -1,16 +1,11 @@
 ---
 headerNavigation:
-  - name: Arrangements & Occasions
-    path: arrangements-and-occasions
-  - showInChildList: Top
-    name: Pickup & Delivery
-    path: pickup-and-delivery
-    children: []
+  - path: why-plantscape
+    name: Why Plantscape?
+  - name: Portfolios
+    path: portfolio
+  - name: Locations
+    path: locations
   - name: About
-    children: []
     path: about
-  - name: Contact
-    children: []
-    callToActions: []
-    path: contact
 ---

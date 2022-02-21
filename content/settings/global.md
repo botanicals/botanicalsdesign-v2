@@ -1,12 +1,11 @@
 ---
-siteTitle: Gibby Floral
+siteTitle: Botanicals Design
 defaultMetadata:
-  title: Gibby Floral | Occasions, Home, and Garden since 1956
+  title: Botanicals Design
   slug: /
-  description: We have been providing the community with beautiful floral designs
-    since 1956, and we’re excited to continue to help you with your special
-    occasions, weddings, memorials, and just something special for the one you
-    love.
+  description: BOTANICALS offers custom plantscape design and installations, plant
+    maintenance services, and three retail locations selling pottery,
+    containers, and yard decor.
 siteBanner:
   shortText: ""
   longText: ""

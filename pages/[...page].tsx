@@ -3,12 +3,16 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 
 import PageLayout from '../layouts/PageLayout';
 import { Metadata } from '../layouts/components/Seo';
+import { HeroProps } from '../layouts/components/Hero';
 
 import Sections from '../components/sections';
+
 import { getParent } from '../utils/split-data';
 
 interface PageProps {
   name: string;
+  heading: string;
+  hero: HeroProps;
   metadata: Metadata;
   sections: any[];
   parent?: {
@@ -28,16 +32,14 @@ interface PagePaths {
   };
 }
 
-const Page: React.FC<PageProps> = ({ name, parent, metadata, sections }) => {
+const Page: React.FC<PageProps> = ({ name, heading, hero, parent, metadata, sections }) => {
   // Check if the required data was provided
   if (!sections) {
     return <ErrorPage statusCode={500} />;
   }
 
   return (
-    <PageLayout seo={metadata}>
-      <h1 className="text-xl font-bold">{name}</h1>
-      <p>Parent page: {parent && JSON.stringify(parent)}</p>
+    <PageLayout heading={heading} hero={hero} seo={metadata}>
       <Sections sections={sections} />
     </PageLayout>
   );
@@ -81,8 +83,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async context => {
   const { page } = context.params!;
 
-  console.log('PAGE', page);
-
   if (!page || typeof page === 'string') {
     return { props: {} };
   }
@@ -91,13 +91,17 @@ export const getStaticProps: GetStaticProps = async context => {
 
   const pageData = await import(`../content/pages/${slug}.md`).catch(error => null);
 
-  const { name, parent, metadata, sections = [] } = pageData.attributes;
+  const { name, heading, hero, parent, metadata, sections = [] } = pageData.attributes;
+
+  console.log({ hero });
 
   return {
     props: {
       name,
+      heading,
+      hero,
       metadata,
-      parent: parent ? getParent(parent) : undefined,
+      parent: parent ? getParent(parent) : null,
       sections,
     },
   };

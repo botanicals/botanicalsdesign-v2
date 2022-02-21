@@ -1,20 +1,31 @@
 ---
 name: Home
+hero:
+  heading: Welcome to Botanicals
+  subheading: Kaysville | Sandy | St. George
+  image:
+    name: home
+    ext: jpg
+  cta:
+    heading: It's time for fall planting!
+    button:
+      href: /locations/kaysville
+      text: Take me to Kaysville
+    text: Visit our Kaysville location for your perennials, shrubs, and trees.
+heading: Who we are
 sections:
-  - type: content
-    content: >-
-      ## Welcome to family owned and operated Gibby Floral
-
-
-      Thank you for choosing Northern Utah’s own [Gibby Floral](/about) for your floral needs. We are a full-service floral shop that offers same-day walk-in service, scheduled pick-up service, and scheduled delivery within Weber county and surrounding areas. We look forward to designing your perfect arrangement for any occasion.
+  - type: locations
+    placeholder: placeholder
+  - type: newsletter
+    placeholder: placeholder
 metadata:
-  shareImage: ''
-  title: Gibby Floral | Occasions, Home, and Garden since 1956
-  description: We have been providing the community with beautiful floral designs
-    since 1956, and we’re excited to continue to help you with your special
-    occasions, weddings, memorials, and just something special for the one you
-    love.
-  twitterUsername: ''
+  shareImage: ""
+  title: Botanicals Design
+  description: BOTANICALS offers custom plantscape design and installations, plant
+    maintenance services, and three retail locations selling pottery,
+    containers, and yard decor.
+  twitterUsername: ""
   twitterCardType: summary
   slug: /
+  titleOverwrite: true
 ---
