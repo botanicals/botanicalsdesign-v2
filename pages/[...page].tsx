@@ -1,5 +1,5 @@
 import ErrorPage from 'next/error';
-import { GetStaticPaths, GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 
 import PageLayout from '../layouts/PageLayout';
 import { Metadata } from '../layouts/components/Seo';
@@ -32,7 +32,7 @@ interface PagePaths {
   };
 }
 
-const Page: React.FC<PageProps> = ({ name, heading, hero, parent, metadata, sections }) => {
+const Page: NextPage<PageProps> = ({ name, heading, hero, parent, metadata, sections }) => {
   // Check if the required data was provided
   if (!sections) {
     return <ErrorPage statusCode={500} />;

@@ -1,3 +1,4 @@
+import { NextPage } from 'next';
 import ErrorPage from 'next/error';
 
 import PageLayout from '../layouts/PageLayout';
@@ -14,7 +15,7 @@ interface IndexPageProps {
   sections: any[];
 }
 
-const IndexPage: React.FC<IndexPageProps> = ({ name, heading, hero, metadata, sections }) => {
+const IndexPage: NextPage<IndexPageProps> = ({ name, heading, hero, metadata, sections }) => {
   // Check if the required data was provided
   if (!sections?.length) {
     return <ErrorPage statusCode={500} />;

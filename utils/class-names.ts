@@ -1,5 +1,5 @@
-const classNames = (...classes) => {
-  return classes.filter(Boolean).join(" ")
-}
+const classNames = (...classes: string[]) => {
+  return classes.filter(Boolean).join(' ');
+};
 
-export default classNames
+export default classNames;

@@ -1,7 +1,9 @@
+import { NextPage } from 'next';
+
 import PageLayout from '../layouts/PageLayout';
 import { Section, Row, Column } from '../components/layouts';
 
-const NotFound = () => {
+const NotFound: NextPage = () => {
   return (
     <PageLayout heading="Sorry..." hero={{ heading: 'Page not found', subheading: '', image: { name: 'home', ext: 'jpg' } }} seo={{ title: 'Not Found', slug: '' }}>
       <Section heading="We couldn't find the page you are looking for">
