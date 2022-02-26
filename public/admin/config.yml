@@ -33,7 +33,6 @@ collections:
               fields:
                 [
                   { label: 'Title', name: 'title', widget: 'string' },
-                  { label: 'Slug', name: slug, widget: string },
                   { label: 'Description', name: 'description', widget: 'text' },
                   { label: 'Share Image', name: 'shareImage', widget: 'image', required: false },
                   { label: 'Twitter Username', name: 'twitterUsername', widget: 'string', required: false },
@@ -46,6 +45,7 @@ collections:
               label: 'Site Banner',
               name: 'siteBanner',
               widget: object,
+              required: false,
               fields:
                 [
                   { label: 'Short Text', name: 'shortText', widget: string, required: false },
@@ -57,8 +57,8 @@ collections:
                     required: false,
                     fields:
                       [
-                        { label: Href, name: href, widget: string, required: false },
                         { label: Text, name: text, widget: string, required: false },
+                        { label: Href, name: href, widget: string, required: false },
                         { label: External, name: external, widget: boolean, default: false, required: false },
                       ],
                   },
@@ -174,7 +174,7 @@ collections:
         }
 
       # Page Heading
-      - { label: Page Heading, name: heading, widget: string }
+      - { label: Page Heading, name: heading, widget: string, required: false }
 
       # Sections
       - {
@@ -184,7 +184,23 @@ collections:
           widget: 'list',
           types:
             [
-              { label: 'Basic Content', name: 'basicContent', widget: 'object', fields: [{ label: Heading, name: heading, widget: string }, { label: 'Content', name: content, widget: 'markdown' }] },
+              {
+                label: 'Basic Content',
+                name: 'basicContent',
+                widget: 'object',
+                fields:
+                  [
+                    { label: Heading, name: heading, widget: string },
+                    { label: 'Content', name: content, widget: 'markdown' },
+                    {
+                      label: Button,
+                      name: button,
+                      widget: object,
+                      required: false,
+                      fields: [{ label: Text, name: text, widget: string, required: false }, { label: Href, name: href, widget: string, required: false }],
+                    },
+                  ],
+              },
               {
                 label: 'Content on Images',
                 name: 'contentOnImages',
@@ -326,6 +342,20 @@ collections:
                   [
                     { label: Heading, name: heading, widget: string },
                     { label: Owners, name: owners, widget: list, fields: [{ label: Name, name: name, widget: string }, { label: Photo, name: photo, widget: image }] },
+                  ],
+              },
+              {
+                label: Request a Consultation,
+                name: requestAConsultation,
+                widget: object,
+                fields:
+                  [
+                    {
+                      label: Image,
+                      name: image,
+                      widget: object,
+                      fields: [{ label: Source, name: source, widget: image }, { label: Alt, name: alt, widget: string }, { label: Caption, name: caption, widget: string, required: false }],
+                    },
                   ],
               },
             ],

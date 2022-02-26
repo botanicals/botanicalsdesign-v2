@@ -2,8 +2,6 @@
 name: Why Plantscape?
 hero:
   image:
-    ext: jpg
-    name: why-plantscape
     source: /uploads/why-plantscape-ml-2x.jpg
     alt: closeup of beautiful subtropical plants in an office space
   heading: Why Plantscape?

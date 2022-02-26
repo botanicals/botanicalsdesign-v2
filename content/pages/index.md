@@ -4,8 +4,6 @@ hero:
   heading: Welcome to Botanicals
   subheading: Kaysville | Sandy | St. George
   image:
-    name: home
-    ext: jpg
     source: /uploads/home-large-2x.jpg
     alt: close up image of a glazed ceramic pot full of vibrant succulents
   cta:
@@ -148,15 +146,15 @@ sections:
     content: We offer more than just pottery and decor at our retail locations. We
       are constantly evolving and growing at our stores. We are starting to
       implement more events, such as plantings, bonsai club meetings, and more.
-    featuredText: Become a Botanicals Insider to stay updated...
+    featuredText: Become a Botanicals Design Insider to stay updated...
     heading: More than just pots...
 metadata:
-  shareImage: ''
+  shareImage: ""
   title: Botanicals Design
   description: BOTANICALS offers custom plantscape design and installations, plant
     maintenance services, and three retail locations selling pottery,
     containers, and yard decor.
-  twitterUsername: ''
+  twitterUsername: ""
   twitterCardType: summary
   slug: /
   titleOverwrite: true

@@ -7,6 +7,7 @@ import VisitOurLocations from './sections/visit-our-locations';
 import BotanicalsInsider from './sections/botanicals-insider';
 import SeeOurPortfolios from './sections/see-our-portfolios';
 import MeetTheOwners from './sections/meet-the-owners';
+import RequestAConsulation from './sections/request-a-consultation';
 
 // Map object keys to section components
 const sectionComponents: { [key: string]: React.FC<any> } = {
@@ -17,6 +18,7 @@ const sectionComponents: { [key: string]: React.FC<any> } = {
   botanicalsInsider: BotanicalsInsider,
   seeOurPortfolio: SeeOurPortfolios,
   meetTheOwners: MeetTheOwners,
+  requestAConsultation: RequestAConsulation,
 };
 
 // Display a section individually

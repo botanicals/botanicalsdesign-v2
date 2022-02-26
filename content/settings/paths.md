@@ -1,8 +1,13 @@
 ---
 paths:
-  - parent: about
-    children: []
+  - parent: why-plantscape
+  - parent: services
+  - parent: prospective-clients
   - parent: portfolio
   - parent: locations
-  - parent: why-plantscape
+  - parent: blog
+  - parent: about
+    children: []
+  - parent: jobs
+  - parent: request-consultation
 ---

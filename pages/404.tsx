@@ -5,7 +5,11 @@ import { Section, Row, Column } from '../components/layouts';
 
 const NotFound: NextPage = () => {
   return (
-    <PageLayout heading="Sorry..." hero={{ heading: 'Page not found', subheading: '', image: { name: 'home', ext: 'jpg' } }} seo={{ title: 'Not Found', slug: '' }}>
+    <PageLayout
+      heading="Sorry..."
+      hero={{ heading: 'Page not found', subheading: '', image: { source: '/uploads/home-large-2x.jpg', alt: 'close up image of a glazed ceramic pot full of vibrant succulents' } }}
+      seo={{ title: 'Not Found', slug: '' }}
+    >
       <Section heading="We couldn't find the page you are looking for">
         <Row>
           <Column width={100}>

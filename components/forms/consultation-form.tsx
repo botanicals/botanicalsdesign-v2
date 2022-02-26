@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ConsultationForm = () => {
   return (
     <form method="post" action="/contact/thanks/" netlify-honeypot="bot-field" data-netlify="true" name="Request Consultation Form" className="retail-contact">

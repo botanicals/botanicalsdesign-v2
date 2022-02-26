@@ -2,6 +2,8 @@
 
 .hero-image-container {
   position: relative;
+  margin-top: -$height-of-header;
+  min-height: $height-of-hero-image;
 
   &__image {
     margin-top: -$height-of-header;

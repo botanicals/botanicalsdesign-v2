@@ -1,5 +1,5 @@
 interface SectionProps {
-  heading: string;
+  heading?: string;
   fullWidth?: boolean;
 }
 

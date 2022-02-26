@@ -1,4 +1,4 @@
-// import Link from 'next/link';
+import Link from 'next/link';
 
 import { attributes as navigation } from '../../content/settings/navigation.md';
 
@@ -19,9 +19,11 @@ const Footer = () => {
           <Column width={50}>
             <h3 className="heading heading__h5 heading__h5--green">Visit Us at our Stores</h3>
             <li className="navigation__list">
-              <a href="/locations/kaysville" className="navigation__links navigation__links--footer">
-                <h4 className="heading heading__h6 heading__h6--green u-hover-link">Botanicals Kaysville</h4>
-              </a>
+              <Link href="/locations/kaysville">
+                <a className="navigation__links navigation__links--footer">
+                  <h4 className="heading heading__h6 heading__h6--green u-hover-link">Botanicals Kaysville</h4>
+                </a>
+              </Link>
             </li>
             <p className="u-default-font-size">
               395 South Deseret Drive
@@ -32,21 +34,25 @@ const Footer = () => {
                 801.589.2055
               </a>
             </p>
-            <a href="/contact/kaysville" className="navigation__links navigation__links--footer">
-              SEND A MESSAGE
-            </a>
+            <Link href="/contact/kaysville">
+              <a className="navigation__links navigation__links--footer">SEND A MESSAGE</a>
+            </Link>
             <br />
+
             <a href="https://www.facebook.com/botanicalskaysville/" target="_blank" rel="noreferrer">
               <img src="/assets/icons/fb.png" className="footer__icon" alt="botanicals kaysville facebook" />
             </a>
+
             <a href="https://www.instagram.com/botanicalsdesign/" target="_blank" rel="noreferrer" className="footer__icon--leftmargin">
               <img src="/assets/icons/ig.png" className="footer__icon" alt="botanicals design instagram" />
             </a>
 
             <li className="navigation__list">
-              <a href="/locations/sandy" className="navigation__links navigation__links--footer">
-                <h4 className="heading heading__h6 heading__h6--green u-hover-link">Botanicals Sandy</h4>
-              </a>
+              <Link href="/locations/sandy">
+                <a className="navigation__links navigation__links--footer">
+                  <h4 className="heading heading__h6 heading__h6--green u-hover-link">Botanicals Sandy</h4>
+                </a>
+              </Link>
             </li>
             <p className="u-default-font-size">
               8610 South State Street
@@ -57,21 +63,25 @@ const Footer = () => {
                 801.567.1255
               </a>
             </p>
-            <a href="/contact/sandy" className="navigation__links navigation__links--footer">
-              SEND A MESSAGE
-            </a>
+            <Link href="/contact/sandy">
+              <a className="navigation__links navigation__links--footer">SEND A MESSAGE</a>
+            </Link>
             <br />
+
             <a href="https://www.facebook.com/BotanicalsSandy/" target="_blank" rel="noreferrer">
               <img src="/assets/icons/fb.png" className="footer__icon" alt="botanicals sandy facebook" />
             </a>
+
             <a href="https://www.instagram.com/botanicalsdesign/" target="_blank" rel="noreferrer" className="footer__icon--leftmargin">
               <img src="/assets/icons/ig.png" className="footer__icon" alt="botanicals design instagram" />
             </a>
 
             <li className="navigation__list">
-              <a href="/locations/saint-george" className="navigation__links navigation__links--footer">
-                <h4 className="heading heading__h6 heading__h6--green u-hover-link">Botanicals St. George</h4>
-              </a>
+              <Link href="/locations/saint-george">
+                <a className="navigation__links navigation__links--footer">
+                  <h4 className="heading heading__h6 heading__h6--green u-hover-link">Botanicals St. George</h4>
+                </a>
+              </Link>
             </li>
             <p className="u-default-font-size">
               592 North Bluff Street
@@ -82,13 +92,15 @@ const Footer = () => {
                 435.656.2151
               </a>
             </p>
-            <a href="/contact/saint-george" className="navigation__links navigation__links--footer">
-              SEND A MESSAGE
-            </a>
+            <Link href="/contact/saint-george">
+              <a className="navigation__links navigation__links--footer">SEND A MESSAGE</a>
+            </Link>
             <br />
+
             <a href="https://www.facebook.com/botanicalsstgeorge/" target="_blank" rel="noreferrer">
               <img src="/assets/icons/fb.png" className="footer__icon" alt="botanicals saint george facebook" />
             </a>
+
             <a href="https://www.instagram.com/botanicalsdesign/" target="_blank" rel="noreferrer" className="footer__icon--leftmargin">
               <img src="/assets/icons/ig.png" className="footer__icon" alt="botanicals design instagram" />
             </a>
@@ -97,74 +109,102 @@ const Footer = () => {
             <h3 className="heading heading__h5 heading__h5--green">Stay up to Date</h3>
             <h4 className="heading heading__h6 heading__h6--green">Explore Our Site</h4>
             <ul className="navigation__list">
-              <a href="/why-plantscape" className="navigation__links navigation__links--footer">
-                <li>Plantscapes</li>
-              </a>
-              <a href="/services" className="navigation__links navigation__links--footer">
-                <li>Services</li>
-              </a>
-              <a href="/prospective-clients" className="navigation__links navigation__links--footer">
-                <li>Prospective Clients</li>
-              </a>
-              <a href="/portfolio" className="navigation__links navigation__links--footer">
-                <li>Portfolio</li>
-              </a>
-              <a href="/locations" className="navigation__links navigation__links--footer">
-                <li>Locations</li>
-              </a>
+              <Link href="/why-plantscape">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Plantscapes</li>
+                </a>
+              </Link>
+              <Link href="/services">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Services</li>
+                </a>
+              </Link>
+              <Link href="/prospective-clients">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Prospective Clients</li>
+                </a>
+              </Link>
+              <Link href="/portfolio">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Portfolio</li>
+                </a>
+              </Link>
+              <Link href="/locations">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Locations</li>
+                </a>
+              </Link>
             </ul>
             <h4 className="heading heading__h6 heading__h6--green">Learn More</h4>
             <ul className="navigation__list navigation__list--footer">
-              <a href="/blog" className="navigation__links navigation__links--footer">
-                <li>Blog </li>
-              </a>
+              <Link href="/blog">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Blog </li>
+                </a>
+              </Link>
 
-              <a href="/about" className="navigation__links navigation__links--footer">
-                <li>About </li>
-              </a>
+              <Link href="/about">
+                <a className="navigation__links navigation__links--footer">
+                  <li>About </li>
+                </a>
+              </Link>
 
               {/*
-              <a
+              <Link><a>
                 href="/events"
                 className="navigation__links navigation__links--footer"
               > <li>
                 Botanicals Events  </li>
-              </a>
+              </a></Link>
            */}
 
-              <a href="/jobs" className="navigation__links navigation__links--footer">
-                <li>Job Openings</li>
-              </a>
+              <Link href="/jobs">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Job Openings</li>
+                </a>
+              </Link>
             </ul>
             <h3 className="heading heading__h5 heading__h5--green">Work with Us</h3>
 
             <h4 className="heading heading__h6 heading__h6--green">Design Professionals</h4>
             <ul className="navigation__list">
-              <a href="/prospective-clients#landscapers" className="navigation__links navigation__links--footer">
-                <li>Landscapers</li>
-              </a>
-              <a href="/prospective-clients#architects" className="navigation__links navigation__links--footer">
-                <li>Architects</li>
-              </a>
-              <a href="/prospective-clients#interior-designers" className="navigation__links navigation__links--footer">
-                <li>Interior Designers</li>
-              </a>
+              <Link href="/prospective-clients#landscapers">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Landscapers</li>
+                </a>
+              </Link>
+              <Link href="/prospective-clients#architects">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Architects</li>
+                </a>
+              </Link>
+              <Link href="/prospective-clients#interior-designers">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Interior Designers</li>
+                </a>
+              </Link>
             </ul>
             <h4 className="heading heading__h6 heading__h6--green">Plantscape Designs</h4>
             <ul className="navigation__list">
-              <a href="/prospective-clients#residential" className="navigation__links navigation__links--footer">
-                <li>Residential Spaces</li>
-              </a>
-              <a href="/prospective-clients#commercial" className="navigation__links navigation__links--footer">
-                <li>Commercial Spaces</li>
-              </a>
+              <Link href="/prospective-clients#residential">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Residential Spaces</li>
+                </a>
+              </Link>
+              <Link href="/prospective-clients#commercial">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Commercial Spaces</li>
+                </a>
+              </Link>
             </ul>
 
             <h4 className="heading heading__h6 heading__h6--green">Get a Free Consultation</h4>
             <ul className="navigation__list">
-              <a href="/request-consultation" className="navigation__links navigation__links--footer">
-                <li>Request a Consultation</li>
-              </a>
+              <Link href="/request-consultation">
+                <a className="navigation__links navigation__links--footer">
+                  <li>Request a Consultation</li>
+                </a>
+              </Link>
             </ul>
           </Column>
         </Row>
@@ -173,14 +213,14 @@ const Footer = () => {
           <Column centered width={100}>
             <span className="footer__copywrite-span">
               &copy; 2021 BY BOTANICALS
-              {/* <a
+              {/* <Link><a>
               href="http://talondurrant.com"
               target="_blank"
               className="footer__copywrite-link"
               rel="noreferrer"
             >
               TALON DURRANT
-            </a> */}
+            </a></Link> */}
             </span>
           </Column>
         </Row>

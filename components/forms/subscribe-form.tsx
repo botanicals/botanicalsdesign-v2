@@ -1,18 +1,18 @@
-import React, { Component } from "react"
+import { Component } from 'react';
 
 class SubscribeForm extends Component {
   componentDidMount() {
-    const script = document.createElement("script")
+    const script = document.createElement('script');
 
-    script.src = "https://botanicalsdesign.activehosted.com/f/embed.php?id=13"
-    script.async = true
+    script.src = 'https://botanicalsdesign.activehosted.com/f/embed.php?id=13';
+    script.async = true;
 
-    document.body.appendChild(script)
+    document.body.appendChild(script);
   }
 
   render() {
-    return <div className="_form_13"></div>
+    return <div className="_form_13"></div>;
   }
 }
 
-export default SubscribeForm
+export default SubscribeForm;
