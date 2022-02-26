@@ -7,13 +7,13 @@ hero:
     name: about
     ext: jpg
   cta:
-    text: ""
+    text: ''
 heading: Learn about us
 sections:
-  - type: locations
+  - type: visitOurLocations
     placeholder: placeholder
 metadata:
   title: About Us
   slug: about
-  description: ""
+  description: ''
 ---

@@ -1,20 +1,22 @@
 import { Fragment } from 'react';
 
-import ContentSection from './sections/content';
-import GallerySection from './sections/gallery';
-import ImageSection from './sections/image';
-import LocationsSection from './sections/locations';
-import NewsletterSection from './sections/newsletter';
-import PortfoliosSection from './sections/portfolios';
+import BasicContent from './sections/basic-content';
+import ContentOnImages from './sections/content-on-images';
+import ColumnContent from './sections/column-content';
+import VisitOurLocations from './sections/visit-our-locations';
+import BotanicalsInsider from './sections/botanicals-insider';
+import SeeOurPortfolios from './sections/see-our-portfolios';
+import MeetTheOwners from './sections/meet-the-owners';
 
 // Map object keys to section components
 const sectionComponents: { [key: string]: React.FC<any> } = {
-  content: ContentSection,
-  image: ImageSection,
-  gallery: GallerySection,
-  locations: LocationsSection,
-  portfolios: PortfoliosSection,
-  newsletter: NewsletterSection,
+  basicContent: BasicContent,
+  contentOnImages: ContentOnImages,
+  columnContent: ColumnContent,
+  visitOurLocations: VisitOurLocations,
+  botanicalsInsider: BotanicalsInsider,
+  seeOurPortfolio: SeeOurPortfolios,
+  meetTheOwners: MeetTheOwners,
 };
 
 // Display a section individually
@@ -33,6 +35,7 @@ const Section = ({ sectionData }: { sectionData: any }) => {
 
 // Display the list of sections
 const Sections = ({ sections }: { sections: any[] }) => {
+  console.log(sections);
   return (
     <Fragment>
       {sections.map((section, index) => {

@@ -2,15 +2,15 @@ import { Row, Column, Section } from '../layouts';
 
 import MarkdownText from '../utility/markdown-text';
 
-interface ContentSectionProps {
+interface BasicContentProps {
   data: {
-    type: 'content';
+    type: 'basicContent';
     heading: string;
     content: string;
   };
 }
 
-const ContentSection: React.FC<ContentSectionProps> = ({ data }) => {
+const BasicContent: React.FC<BasicContentProps> = ({ data }) => {
   return (
     <Section heading={data.heading}>
       <Row>
@@ -22,4 +22,4 @@ const ContentSection: React.FC<ContentSectionProps> = ({ data }) => {
   );
 };
 
-export default ContentSection;
+export default BasicContent;

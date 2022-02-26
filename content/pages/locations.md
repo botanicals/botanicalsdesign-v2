@@ -8,7 +8,7 @@ hero:
   subheading: Serving the wasatch front and southern utah
 heading: Bring life to your space
 sections:
-  - type: locations
+  - type: visitOurLocations
     placeholder: placeholder
   - type: newsletter
     placeholder: placeholder
