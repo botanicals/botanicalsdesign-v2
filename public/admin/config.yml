@@ -358,6 +358,51 @@ collections:
                     },
                   ],
               },
+              { label: Design Process, name: designProcess, widget: object, fields: [{ label: Heading, name: heading, widget: string }] },
+              { label: Plantscape Maintenance, name: plantscapeMaintenance, widget: object, fields: [{ label: Heading, name: heading, widget: string }] },
+              {
+                label: Porfolio Gallery,
+                name: portfolioGallery,
+                widget: object,
+                fields:
+                  [
+                    {
+                      label: Commercial,
+                      name: commercial,
+                      widget: list,
+                      fields:
+                        [
+                          { label: Heading, name: heading, widget: string },
+                          {
+                            label: Images,
+                            name: images,
+                            widget: list,
+                            fields:
+                              [
+                                { label: Source, name: source, widget: image, media_folder: images/portfolio },
+                                { label: Alt, name: alt, widget: string },
+                                { label: Caption, name: caption, widget: string, required: false },
+                              ],
+                          },
+                        ],
+                    },
+                    {
+                      label: Residential,
+                      name: residential,
+                      widget: list,
+                      fields:
+                        [
+                          { label: Heading, name: heading, widget: string },
+                          {
+                            label: Images,
+                            name: images,
+                            widget: list,
+                            fields: [{ label: Source, name: source, widget: image }, { label: Alt, name: alt, widget: string }, { label: Caption, name: caption, widget: string, required: false }],
+                          },
+                        ],
+                    },
+                  ],
+              },
             ],
         }
 

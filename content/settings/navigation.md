@@ -4,6 +4,11 @@ headerNavigation:
     name: Why Plantscape?
   - path: services
     name: Services
+    children:
+      - path: design
+        name: Design
+      - name: Maintenance
+        path: maintenance
   - path: prospective-clients
     name: Prospective Clients
     children:

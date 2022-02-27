@@ -8,6 +8,9 @@ import BotanicalsInsider from './sections/botanicals-insider';
 import SeeOurPortfolios from './sections/see-our-portfolios';
 import MeetTheOwners from './sections/meet-the-owners';
 import RequestAConsulation from './sections/request-a-consultation';
+import DesignProcess from './sections/design-process';
+import PlantscapeMaintenance from './sections/plantscape-maintenance';
+import PortfolioGallery from './sections/portfolio-gallery';
 
 // Map object keys to section components
 const sectionComponents: { [key: string]: React.FC<any> } = {
@@ -19,6 +22,9 @@ const sectionComponents: { [key: string]: React.FC<any> } = {
   seeOurPortfolio: SeeOurPortfolios,
   meetTheOwners: MeetTheOwners,
   requestAConsultation: RequestAConsulation,
+  designProcess: DesignProcess,
+  plantscapeMaintenance: PlantscapeMaintenance,
+  portfolioGallery: PortfolioGallery,
 };
 
 // Display a section individually
