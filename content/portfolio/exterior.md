@@ -1,6 +1,5 @@
 ---
-name: Portfolio > Exterior
-parent: Portfolio__portfolio
+name: Exterior
 hero:
   heading: Exterior Portfolio
   subheading: Breathe life into your exterior surroundings
@@ -8,7 +7,12 @@ hero:
     source: /uploads/exterior-portfolio-ml-2x.jpg
     alt: exterior plantscape arrangement next to a red rock decorated swimming pool
       and waterfall
-heading: Living Exteriors
+commercial:
+  - heading: Featuring Crimson Corner Cafe
+    folder: crimson-corner-cafe
+residential:
+  - heading: Featuring Entrada
+    folder: entrada
 metadata:
   title: Exterior Plantscape Design Portfolio
   slug: exterior

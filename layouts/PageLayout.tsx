@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 interface PageLayoutProps {
   hero: HeroProps;
-  heading: string;
+  heading?: string;
   seo: Metadata;
 }
 
@@ -20,7 +20,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ hero, heading, seo, children })
           <Header />
           <Hero heading={hero.heading} subheading={hero.subheading} image={hero.image} cta={hero.cta} />
           <main className="main__content-container">
-            <h1 className="heading heading__h1">{heading}</h1>
+            {heading ? <h1 className="heading heading__h1">{heading}</h1> : null}
             {children}
           </main>
         </div>

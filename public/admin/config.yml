@@ -78,7 +78,8 @@ collections:
               fields:
                 [
                   { label: 'Name', name: 'name', widget: string },
-                  { label: Path, name: path, widget: relation, collection: 'pages', search_fields: ['metadata.slug'], value_field: 'metadata.slug', display_fields: ['name'] },
+                  { label: Path, name: path, widget: relation, collection: 'pages', search_fields: ['metadata.slug'], value_field: 'metadata.slug', display_fields: ['name'], required: false },
+                  { label: Href, name: href, widget: string, required: false },
                   {
                     label: 'Children',
                     label_singular: 'Item',
@@ -87,7 +88,84 @@ collections:
                     fields:
                       [
                         { label: 'Name', name: 'name', widget: string },
-                        { label: Path, name: path, widget: relation, collection: 'pages', search_fields: ['metadata.slug'], value_field: 'metadata.slug', display_fields: ['name'] },
+                        { label: Path, name: path, widget: relation, collection: 'pages', search_fields: ['metadata.slug'], value_field: 'metadata.slug', display_fields: ['name'], required: false },
+                        { label: Href, name: href, widget: string, required: false },
+                      ],
+                  },
+                ],
+            }
+
+          # Footer Locations
+          - {
+              label: 'Footer Locations',
+              name: footerLocations,
+              widget: 'object',
+              fields:
+                [
+                  { label: 'Heading', name: 'heading', widget: string },
+                  {
+                    label: Locations,
+                    label_singular: location,
+                    name: locations,
+                    widget: list,
+                    fields:
+                      [
+                        { label: 'Name', name: 'name', widget: string },
+                        { label: Href, name: href, widget: string },
+                        { label: Address, name: address, widget: text },
+                        { label: Phone, name: phone, widget: object, fields: [{ label: Text, name: text, widget: string }, { label: Href, name: href, widget: string }] },
+                        { label: Email, name: email, widget: object, fields: [{ label: Text, name: text, widget: string }, { label: Href, name: href, widget: string }] },
+                        {
+                          label: Socials,
+                          label_singular: Social,
+                          name: socials,
+                          widget: list,
+                          fields: [{ label: Type, name: type, widget: select, options: ['facebook', 'instagram'] }, { label: Href, name: href, widget: string }],
+                        },
+                      ],
+                  },
+                ],
+            }
+
+          # Footer Navigation
+          - {
+              label: 'Footer Navigation',
+              label_singular: 'Column',
+              name: footerNavigation,
+              widget: 'list',
+              fields:
+                [
+                  { label: 'Heading', name: 'heading', widget: string },
+                  {
+                    label: 'Groups',
+                    label_singular: 'Group',
+                    name: 'groups',
+                    widget: 'list',
+                    fields:
+                      [
+                        { label: 'Name', name: 'name', widget: string },
+                        {
+                          label: 'Children',
+                          label_singular: 'Group',
+                          name: 'children',
+                          widget: 'list',
+                          fields:
+                            [
+                              { label: 'Name', name: 'name', widget: string },
+                              {
+                                label: Path,
+                                name: path,
+                                widget: relation,
+                                collection: 'pages',
+                                search_fields: ['metadata.slug'],
+                                value_field: 'metadata.slug',
+                                display_fields: ['name'],
+                                required: false,
+                              },
+                              { label: Href, name: href, widget: string, required: false },
+                              { label: Tag, name: tag, widget: string, required: false },
+                            ],
+                        },
                       ],
                   },
                 ],
@@ -360,49 +438,6 @@ collections:
               },
               { label: Design Process, name: designProcess, widget: object, fields: [{ label: Heading, name: heading, widget: string }] },
               { label: Plantscape Maintenance, name: plantscapeMaintenance, widget: object, fields: [{ label: Heading, name: heading, widget: string }] },
-              {
-                label: Porfolio Gallery,
-                name: portfolioGallery,
-                widget: object,
-                fields:
-                  [
-                    {
-                      label: Commercial,
-                      name: commercial,
-                      widget: list,
-                      fields:
-                        [
-                          { label: Heading, name: heading, widget: string },
-                          {
-                            label: Images,
-                            name: images,
-                            widget: list,
-                            fields:
-                              [
-                                { label: Source, name: source, widget: image, media_folder: images/portfolio },
-                                { label: Alt, name: alt, widget: string },
-                                { label: Caption, name: caption, widget: string, required: false },
-                              ],
-                          },
-                        ],
-                    },
-                    {
-                      label: Residential,
-                      name: residential,
-                      widget: list,
-                      fields:
-                        [
-                          { label: Heading, name: heading, widget: string },
-                          {
-                            label: Images,
-                            name: images,
-                            widget: list,
-                            fields: [{ label: Source, name: source, widget: image }, { label: Alt, name: alt, widget: string }, { label: Caption, name: caption, widget: string, required: false }],
-                          },
-                        ],
-                    },
-                  ],
-              },
             ],
         }
 
@@ -423,7 +458,180 @@ collections:
             ],
         }
 
-  # Blog Posts
+  # Portfolio
+  - name: 'portfolio'
+    label: 'Portfolio'
+    summary: '{{name}}'
+    identifier_field: metadata.slug
+    create: false
+    folder: content/portfolio
+    fields:
+      # Name
+      - { label: 'Name', name: 'name', widget: 'string' }
+
+      # Hero
+      - {
+          label: Hero,
+          name: hero,
+          widget: object,
+          collapsed: true,
+          fields:
+            [
+              { label: Heading, name: heading, widget: string },
+              { label: Subheading, name: subheading, widget: string },
+              { label: Image, name: image, widget: object, fields: [{ label: Source, name: source, widget: image }, { label: Alt, name: alt, widget: string }] },
+            ],
+        }
+
+      # Commercial
+      - {
+          label: 'Commercial',
+          label_singular: Feature,
+          name: 'commercial',
+          widget: 'list',
+          fields: [{ label: Heading, name: heading, widget: string }, { label: Folder, name: folder, widget: string, hint: This is the folder where the images are stored in Cloudinary }],
+        }
+
+      # Residential
+      - {
+          label: 'Residential',
+          label_singular: Feature,
+          name: 'residential',
+          widget: 'list',
+          fields: [{ label: Heading, name: heading, widget: string }, { label: Folder, name: folder, widget: string, hint: This is the folder where the images are stored in Cloudinary }],
+        }
+
+        # Metadata
+      - {
+          label: 'Metadata',
+          name: 'metadata',
+          widget: 'object',
+          fields:
+            [
+              { label: 'Title', name: 'title', widget: 'string' },
+              { label: 'Slug', name: slug, widget: string },
+              { label: 'Description', name: 'description', widget: 'text', required: false },
+              { label: 'Share Image', name: 'shareImage', widget: 'image', required: false },
+              { label: 'Twitter Username', name: 'twitterUsername', widget: 'string', required: false },
+              { label: 'Twitter Card Type', name: 'twitterCardType', widget: 'select', options: ['summary', 'summary_large_image', 'app', 'player'], required: false },
+              { label: 'Overwrite Title', name: 'titleOverwrite', widget: boolean, required: false },
+            ],
+        }
+
+  # Locations
+  - name: 'locations'
+    label: 'Locations'
+    summary: '{{name}}'
+    identifier_field: metadata.slug
+    create: false
+    folder: content/locations
+    fields:
+      # Name
+      - { label: 'Name', name: 'name', widget: 'string' }
+
+      # Hero
+      - {
+          label: Hero,
+          name: hero,
+          widget: object,
+          collapsed: true,
+          fields:
+            [
+              { label: Heading, name: heading, widget: string },
+              { label: Subheading, name: subheading, widget: string },
+              { label: Image, name: image, widget: object, fields: [{ label: Source, name: source, widget: image }, { label: Alt, name: alt, widget: string }] },
+            ],
+        }
+
+      # About Us
+      - {
+          label: 'About Us',
+          name: aboutUs,
+          widget: 'object',
+          fields:
+            [
+              { label: Heading, name: heading, widget: string },
+              { label: Content, name: content, widget: markdown },
+              { label: Subheading, name: subheading, widget: string },
+              { label: Call Us, name: callUs, widget: object, fields: [{ label: Text, name: text, widget: string }, { label: Href, name: href, widget: string }] },
+              { label: Email Us, name: emailUs, widget: object, fields: [{ label: Text, name: text, widget: string }, { label: Href, name: href, widget: string }] },
+              {
+                label: Image,
+                name: image,
+                widget: object,
+                fields: [{ label: Source, name: source, widget: image }, { label: Alt, name: alt, widget: string }, { label: Caption, name: caption, widget: string, required: false }],
+              },
+            ],
+        }
+
+      # Visit Us
+      - {
+          label: 'Visit Us',
+          name: visitUs,
+          widget: 'object',
+          fields:
+            [
+              { label: Heading, name: heading, widget: string },
+              { label: Business Info, name: businessInfo, widget: markdown },
+              { label: 'Map', name: 'map', widget: 'object', fields: [{ label: 'Map Title', name: title, widget: string }, { label: 'Map Source', name: source, widget: string }] },
+            ],
+        }
+
+      # Optional Content
+      - {
+          label: 'Additional Content',
+          name: 'additionalContent',
+          widget: 'object',
+          required: false,
+          collapsed: true,
+          fields:
+            [
+              { label: Heading, name: heading, widget: string, required: false },
+              { label: 'Content', name: content, widget: 'markdown', required: false },
+              {
+                label: Button,
+                name: button,
+                widget: object,
+                required: false,
+                fields: [{ label: Text, name: text, widget: string, required: false }, { label: Href, name: href, widget: string, required: false }],
+              },
+            ],
+        }
+
+      # Gallery
+      - {
+          label: 'Gallery',
+          name: 'gallery',
+          widget: 'object',
+          fields: [{ label: Heading, name: heading, widget: string }, { label: Folder, name: folder, widget: string, hint: This is the folder where the images are stored in Cloudinary }],
+        }
+
+      # Botanicals Insider
+      - {
+          label: Botanicals Insider,
+          name: botanicalsInsider,
+          widget: object,
+          fields: [{ label: Heading, name: heading, widget: string }, { label: Content, name: content, widget: markdown }, { label: Featured Text, name: featuredText, widget: string }],
+        }
+
+      # Metadata
+      - {
+          label: 'Metadata',
+          name: 'metadata',
+          widget: 'object',
+          fields:
+            [
+              { label: 'Title', name: 'title', widget: 'string' },
+              { label: 'Slug', name: slug, widget: string },
+              { label: 'Description', name: 'description', widget: 'text', required: false },
+              { label: 'Share Image', name: 'shareImage', widget: 'image', required: false },
+              { label: 'Twitter Username', name: 'twitterUsername', widget: 'string', required: false },
+              { label: 'Twitter Card Type', name: 'twitterCardType', widget: 'select', options: ['summary', 'summary_large_image', 'app', 'player'], required: false },
+              { label: 'Overwrite Title', name: 'titleOverwrite', widget: boolean, required: false },
+            ],
+        }
+
+  # Posts
   - name: 'posts'
     label: 'Posts'
     label_singular: Post
@@ -439,7 +647,7 @@ collections:
       - { label: 'Name', name: 'name', widget: 'string' }
 
       # Author
-      - { label: 'Author', name: 'author', widget: 'select', options: ['Botanicals Design', 'Nicole Hancock', 'Darren Edwards', 'Talon Durrant'] }
+      - { label: 'Author', name: 'author', widget: 'select', options: ['Botanicals Design', 'Nicole Hancock', 'Darren Edwards', 'Shannon Mondry', 'Talon Durrant'] }
 
       # Publish Date
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
@@ -494,7 +702,7 @@ collections:
             ],
         }
 
-  # Post Categories
+  # Categories
   - name: 'categories'
     label: 'Categories'
     label_singular: 'Category'

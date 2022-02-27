@@ -1,13 +1,21 @@
 ---
-name: Portfolio > Interior
-parent: Portfolio__portfolio
+name: Interior
 hero:
   heading: Interior Portfolio
   subheading: Breathe life into your interior surroundings
   image:
     source: /uploads/interior-portfolio-large-2x.jpg
     alt: spherical blue glazed planted pot next to a matching blue chair
-heading: Living Interiors
+commercial:
+  - heading: Overview
+    folder: overview
+  - heading: Featuring Findlay Subaru
+    folder: findlay-subaru
+  - heading: Featuring IHC Genomics
+    folder: ihc-genomics
+residential:
+  - heading: Featuring St George Parade of Homes 2020
+    folder: parade-of-homes-2020
 metadata:
   title: Interior Plantscape Design Portfolio
   slug: interior
