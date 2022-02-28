@@ -6,6 +6,7 @@ export type HeaderNavigation = {
     name: string;
     path?: string;
     href?: string;
+    nested: boolean;
   }[];
 };
 

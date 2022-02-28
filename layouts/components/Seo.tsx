@@ -9,6 +9,10 @@ export interface Metadata {
   shareImage?: {
     url: string;
   };
+  parent?: {
+    title: string;
+    slug: string;
+  };
   twitterCardType?: 'summary' | 'summary_large_image' | 'app' | 'player';
   twitterUsername?: string;
   titleOverwrite?: boolean;

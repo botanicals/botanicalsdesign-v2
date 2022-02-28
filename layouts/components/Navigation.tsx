@@ -38,7 +38,7 @@ const Navigation: React.VFC<NavigationProps> = ({ navigation }) => {
 
         {navigation.map((item, index) => (
           <li key={index} className="parent-nav">
-            <Link href={'/' + (item.path! || item.href!)}>
+            <Link href={`/${item.path! || item.href!}`}>
               <a className="navigation__links">
                 {item.name} {item.children?.length ? '>' : ''}
               </a>
@@ -47,7 +47,7 @@ const Navigation: React.VFC<NavigationProps> = ({ navigation }) => {
               <ul className="navigation__list navigation__list--secondary">
                 {item.children.map((subItem, index) => (
                   <li key={index}>
-                    <Link href={'/' + (item.path! || item.href!) + '/' + (subItem.path! || subItem.href!)}>
+                    <Link href={subItem.nested ? `/${item.path! || item.href!}/${subItem.path! || subItem.href!}` : `/${subItem.path! || subItem.href!}`}>
                       <a className="navigation__links">{subItem.name}</a>
                     </Link>
                   </li>

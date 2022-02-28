@@ -11,8 +11,6 @@ import { Navigation } from '../../utils/md-types';
 const Footer = () => {
   const { footerNavigation, footerLocations } = navigation as Navigation;
 
-  console.log({ footerNavigation, footerLocations });
-
   return (
     <footer className="footer">
       <Section>
@@ -94,14 +92,14 @@ const Footer = () => {
             <div className="grid gap-8 mt-12 sm:grid-cols-3 lg:grid-cols-2">
               <div>
                 <a href="https://gibbyfloral.com" target="_blank" rel="noreferrer">
-                  <a>
-                    <img src="/assets/bfob/gibby-floral.png" alt="gibby floral" />
-                  </a>
+                  <img src="/assets/bfob/gibby-floral.png" alt="gibby floral" />
                 </a>
               </div>
               <div className="border border-green-900 rounded-2xl">
                 <Link href="/">
-                  <img src="/assets/bfob/botanicals.png" alt="botanicals" />
+                  <a>
+                    <img src="/assets/bfob/botanicals.png" alt="botanicals" />
+                  </a>
                 </Link>
               </div>
               <div>

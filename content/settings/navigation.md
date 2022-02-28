@@ -7,29 +7,37 @@ headerNavigation:
     children:
       - path: design
         name: Design
+        nested: true
       - name: Maintenance
         path: maintenance
+        nested: true
   - path: prospective-clients
     name: Prospective Clients
     children:
       - path: request-consultation
         name: Request a Consultation
+        nested: false
   - name: Portfolio
     path: portfolio
     children:
       - name: Interior
         href: interior
+        nested: true
       - name: Exterior
         href: exterior
+        nested: true
   - name: Locations
     path: locations
     children:
       - name: Kaysville, UT
         href: kaysville
+        nested: true
       - name: Sandy, UT
         href: sandy
+        nested: true
       - name: St George, UT
         href: saint-george
+        nested: true
   - path: blog
     name: Blog
   - name: About

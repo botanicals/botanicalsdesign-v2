@@ -40,7 +40,10 @@ export async function getStaticProps() {
       name,
       heading,
       hero,
-      metadata,
+      metadata: {
+        ...metadata,
+        slug: '',
+      },
       sections,
     },
   };

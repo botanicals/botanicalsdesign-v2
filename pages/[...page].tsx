@@ -15,10 +15,6 @@ interface PageProps {
   hero: HeroProps;
   metadata: Metadata;
   sections: any[];
-  parent?: {
-    title: string;
-    slug: string;
-  };
 }
 
 interface SiteMap {
@@ -32,7 +28,7 @@ interface PagePaths {
   };
 }
 
-const Page: NextPage<PageProps> = ({ name, heading, hero, parent, metadata, sections }) => {
+const Page: NextPage<PageProps> = ({ name, heading, hero, metadata, sections }) => {
   // Check if the required data was provided
   if (!sections) {
     return <ErrorPage statusCode={500} />;
@@ -98,8 +94,10 @@ export const getStaticProps: GetStaticProps = async context => {
       name,
       heading,
       hero,
-      metadata,
-      parent: parent ? getParent(parent) : null,
+      metadata: {
+        ...metadata,
+        parent: parent ? getParent(parent) : null,
+      },
       sections,
     },
   };
