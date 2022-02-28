@@ -8,7 +8,6 @@ paths:
   - parent: prospective-clients
   - parent: portfolio
   - parent: locations
-  - parent: blog
   - parent: about
     children: []
   - parent: jobs
