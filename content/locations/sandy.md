@@ -54,6 +54,16 @@ botanicalsInsider:
     are constantly evolving and growing at our stores. We are starting to
     implement more events, such as plantings, bonsai club meetings, and more.
   featuredText: Become a Botanicals Insider to stay updated...
+contactForm:
+  image:
+    alt: beautiful plant in a container with a view out a window behind it
+    source: /uploads/sandy-contact-large-2x.jpg
+  title: Sandy Retail Contact
+  description: Our trained staff are always happy to answer your questions or
+    assist in any way. Visit us, call, or fill out our Sandy retail contact form
+    today.
+  heading: Botanicals Sandy Contact
+  subheading: Please fill out the form below with any questions you may have
 metadata:
   title: Sandy Retail Location for Pottery, Containers, and Decor
   description: Botanicals Sandy retail location offers indoor and outdoor pottery

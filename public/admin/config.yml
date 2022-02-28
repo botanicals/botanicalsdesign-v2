@@ -614,6 +614,26 @@ collections:
           fields: [{ label: Heading, name: heading, widget: string }, { label: Content, name: content, widget: markdown }, { label: Featured Text, name: featuredText, widget: string }],
         }
 
+      # Contact Form
+      - {
+          label: Contact Form,
+          name: contactForm,
+          widget: object,
+          fields:
+            [
+              { label: 'Title', name: 'title', widget: 'string' },
+              { label: 'Description', name: 'description', widget: 'text', required: false },
+              { label: Heading, name: heading, widget: string },
+              { label: Subheading, name: subheading, widget: string },
+              {
+                label: Image,
+                name: image,
+                widget: object,
+                fields: [{ label: Source, name: source, widget: image }, { label: Alt, name: alt, widget: string }, { label: Caption, name: caption, widget: string, required: false }],
+              },
+            ],
+        }
+
       # Metadata
       - {
           label: 'Metadata',

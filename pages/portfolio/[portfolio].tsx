@@ -96,7 +96,7 @@ export const getStaticProps: GetStaticProps = async context => {
 
   console.log(pageData.attributes);
 
-  const results = await cloudinary.search.expression(`folder=${portfolio}/*`).execute();
+  const results = await cloudinary.search.expression(`folder=${portfolio}/*`).with_field('context').execute();
 
   console.log(results);
 

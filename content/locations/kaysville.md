@@ -91,6 +91,16 @@ botanicalsInsider:
     are constantly evolving and growing at our stores. We are starting to
     implement more events, such as plantings, bonsai club meetings, and more.
   featuredText: Become a Botanicals Insider to stay updated...
+contactForm:
+  title: Kaysville Retail Contact
+  description: Our trained staff are always happy to answer your questions or
+    assist in any way. Visit us, call, or fill out our kaysville retail contact
+    form today.
+  heading: Botanicals Kaysville Contact
+  subheading: Please fill out the form below with any questions you may have
+  image:
+    source: /uploads/kaysville-contact-large-2x.jpg
+    alt: beautiful plant in a container with a view out a window behind it
 metadata:
   title: Botanicals Garden Center in Kaysville, UT
   description: Botanicals Kaysville is pleased to focus on serving the needs of
