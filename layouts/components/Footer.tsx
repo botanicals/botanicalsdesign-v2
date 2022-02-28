@@ -5,7 +5,7 @@ import { attributes as navigation } from '../../content/settings/navigation.md';
 import { Section, Column, Row } from '../../components/layouts';
 
 const Footer = () => {
-  const { footerNavigation } = navigation;
+  const { footerNavigation, footerLocations } = navigation;
 
   return (
     <footer className="footer">

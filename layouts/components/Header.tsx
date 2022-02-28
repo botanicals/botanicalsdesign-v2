@@ -2,12 +2,10 @@ import Link from 'next/link';
 
 import Navigation from './Navigation';
 
-// import { attributes as global } from '../../content/settings/global.md';
-// import { attributes as navigation } from '../../content/settings/navigation.md';
+import { attributes as navigation } from '../../content/settings/navigation.md';
 
 const Header = () => {
-  // const { siteTitle } = global;
-  // const { headerNavigation } = navigation;
+  const { headerNavigation } = navigation;
 
   return (
     <header className="header">
@@ -21,7 +19,7 @@ const Header = () => {
           <img className="header__logo--mobile-image" src="/assets/logos/botanicals-logo-mobile.png" alt="botanicals logo" />
         </a>
       </Link>
-      <Navigation />
+      <Navigation navigation={headerNavigation} />
     </header>
   );
 };

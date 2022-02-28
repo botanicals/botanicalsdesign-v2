@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-function Navigation() {
+interface NavigationProps {
+  navigation: {};
+}
+
+const Navigation: React.VFC<NavigationProps> = ({ navigation }) => {
   const [navListVisible, setNavListVisible] = useState(false);
 
   function hamburgerClick() {
@@ -115,6 +119,6 @@ function Navigation() {
       </ul>
     </nav>
   );
-}
+};
 
 export default Navigation;

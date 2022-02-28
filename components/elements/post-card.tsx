@@ -1,24 +1,22 @@
 import Link from 'next/link';
 
+import { Post } from '../../pages/blog';
+import { formatDate } from '../../utils/format-date';
+
 interface PostCardProps {
-  image: string;
-  title: string;
-  author: string;
-  date: string;
-  excerpt: string;
-  slug: string;
+  post: Post;
 }
 
-const PostCard: React.FC<PostCardProps> = ({ image, title, author, date, excerpt, slug }) => (
+const PostCard: React.FC<PostCardProps> = ({ post }) => (
   <div className="blog__card">
-    <img src={image} alt="" />
+    <img src={post.image.source} alt={post.image.alt} />
     <div className="blog__details">
-      <h2>{title}</h2>
+      <h2>{post.name}</h2>
       <p className="blog__metadata">
-        {author} | {date}
+        {post.author} | {formatDate(post.date)}
       </p>
-      <p>{excerpt}</p>
-      <Link href={slug}>
+      <p>{post.excerpt}</p>
+      <Link href={`/blog/${post.metadata.slug}`}>
         <a className="blog__read-more">Read More &#8811;</a>
       </Link>
     </div>

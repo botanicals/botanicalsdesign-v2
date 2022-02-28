@@ -7,7 +7,7 @@ import rehypeSlug from 'rehype-slug';
 
 const MarkdownText = ({ markdown, children }: { markdown?: string; children?: string }) => {
   return (
-    <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]}>
+    <Markdown className="post__container" remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]}>
       {String(children || markdown)}
     </Markdown>
   );
