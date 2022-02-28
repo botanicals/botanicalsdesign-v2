@@ -11,6 +11,7 @@ interface BasicContentProps {
     button?: {
       text?: string;
       href?: string;
+      external?: boolean;
     };
   };
 }
@@ -21,7 +22,11 @@ const BasicContent: React.FC<BasicContentProps> = ({ data }) => {
       <Row>
         <Column width={100}>
           <MarkdownText>{data.content}</MarkdownText>
-          {data.button && data.button.href && data.button.text && <Button href={data.button.href}>{data.button.text}</Button>}
+          {data.button && data.button.href && data.button.text && (
+            <Button href={data.button.href} external={data.button.external}>
+              {data.button.text}
+            </Button>
+          )}
         </Column>
       </Row>
     </Section>

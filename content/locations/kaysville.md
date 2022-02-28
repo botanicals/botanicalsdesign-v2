@@ -82,6 +82,7 @@ additionalContent:
   button:
     text: Tri City Nursery
     href: https://tricitynurseryutah.com/
+    external: true
 gallery:
   heading: Gallery
   folder: kaysville

@@ -17,6 +17,7 @@ sections:
     button:
       text: View all open positions
       href: https://app.joinhomebase.com/cmp/botanicals-inc-stg
+      external: true
   - type: basicContent
     content: >-
       ### Kaysville, UT

@@ -11,6 +11,7 @@ interface ContentOnImagesProps {
     button: {
       text: string;
       href: string;
+      external?: boolean;
     };
     images: {
       source: string;
@@ -26,7 +27,9 @@ const ContentOnImages: React.FC<ContentOnImagesProps> = ({ data }) => {
       <Row>
         <Column width={100}>
           <MarkdownText>{data.content}</MarkdownText>
-          <Button href={data.button.href}>{data.button.text}</Button>
+          <Button href={data.button.href} external={data.button.external}>
+            {data.button.text}
+          </Button>
         </Column>
       </Row>
       <Row>

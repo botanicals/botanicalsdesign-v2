@@ -10,6 +10,7 @@ interface ContentSectionProps {
   text?: string;
   href?: string;
   alt?: string;
+  external?: boolean;
   caption?: string;
   source?: string;
 }
@@ -43,7 +44,7 @@ const ContentSection: React.VFC<{ sections: ContentSectionProps[] }> = ({ sectio
 
         if (section.type === 'button') {
           return (
-            <Button key={index} href={section.href!}>
+            <Button key={index} href={section.href!} external={section.external}>
               {section.text}
             </Button>
           );

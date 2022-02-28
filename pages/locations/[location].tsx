@@ -33,7 +33,9 @@ const LocationPage: NextPage<LocationPageProps> = ({ name, hero, metadata, secti
           <Column width={50}>
             <MarkdownText>{about.content}</MarkdownText>
             <h3 className="heading heading__h3 heading__h3--green">{about.subheading}</h3>
-            <Button href={about.callUs.href}>{about.callUs.text}</Button>
+            <Button href={about.callUs.href} external>
+              {about.callUs.text}
+            </Button>
             <Button href={about.emailUs.href}>{about.emailUs.text}</Button>
           </Column>
 
@@ -62,7 +64,7 @@ const LocationPage: NextPage<LocationPageProps> = ({ name, hero, metadata, secti
             <Column width={100}>
               <MarkdownText>{additional.content}</MarkdownText>
               {additional.button && additional.button.text && additional.button.href && (
-                <Button href={additional.button.href} external={true}>
+                <Button href={additional.button.href} external={additional.button.external}>
                   {additional.button.text}
                 </Button>
               )}
