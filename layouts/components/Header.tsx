@@ -3,9 +3,10 @@ import Link from 'next/link';
 import Navigation from './Navigation';
 
 import { attributes as navigation } from '../../content/settings/navigation.md';
+import { Navigation as INavigation } from '../../utils/md-types';
 
 const Header = () => {
-  const { headerNavigation } = navigation;
+  const { headerNavigation } = navigation as INavigation;
 
   return (
     <header className="header">

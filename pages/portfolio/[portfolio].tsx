@@ -38,11 +38,13 @@ const PortfolioPage: NextPage<PortfolioPageProps> = ({ name, hero, metadata, com
           <Row key={index}>
             <Column width={100}>
               <h3 className="heading heading__h3 heading__h3--red">{heading}</h3>
-              {images.map((image, index) => (
-                <figure key={index}>
-                  <img src={image.secure_url} alt={`${name} portfolio - Commercial - ${heading} - ${index}`} />
-                </figure>
-              ))}
+              <div className="space-y-8">
+                {images.map((image, index) => (
+                  <figure key={index}>
+                    <img src={image.secure_url} alt={`${name} portfolio - Commercial - ${heading} - ${index}`} />
+                  </figure>
+                ))}
+              </div>
             </Column>
           </Row>
         ))}
@@ -53,11 +55,13 @@ const PortfolioPage: NextPage<PortfolioPageProps> = ({ name, hero, metadata, com
           <Row key={index}>
             <Column width={100}>
               <h3 className="heading heading__h3 heading__h3--red">{heading}</h3>
-              {images.map((image, index) => (
-                <figure key={index}>
-                  <img src={image.secure_url} alt={`${name} portfolio - Residential - ${heading} - ${index}`} />
-                </figure>
-              ))}
+              <div className="space-y-8">
+                {images.map((image, index) => (
+                  <figure key={index}>
+                    <img src={image.secure_url} alt={`${name} portfolio - Residential - ${heading} - ${index}`} />
+                  </figure>
+                ))}
+              </div>
             </Column>
           </Row>
         ))}

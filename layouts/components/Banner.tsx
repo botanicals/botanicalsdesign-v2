@@ -17,10 +17,14 @@ const Banner = () => {
   return (
     <div className="top-notification-banner">
       <p>
-        Botanicals has recently opened a new retail location in Kaysville, Utah!{' '}
-        <Link href="/locations/kaysville">
-          <a>Visit the new page to learn more.</a>
-        </Link>
+        {siteBanner.longText}{' '}
+        {siteBanner.link.external ? (
+          <a href={siteBanner.link.href}>{siteBanner.link.text}</a>
+        ) : (
+          <Link href={siteBanner.link.href}>
+            <a>{siteBanner.link.text}</a>
+          </Link>
+        )}
       </p>
     </div>
   );
