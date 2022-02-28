@@ -41,7 +41,6 @@ const Section = ({ sectionData }: { sectionData: any }) => {
 
 // Display the list of sections
 const Sections = ({ sections }: { sections: any[] }) => {
-  console.log(sections);
   return (
     <Fragment>
       {sections.map((section, index) => {

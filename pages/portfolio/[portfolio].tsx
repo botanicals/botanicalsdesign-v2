@@ -31,8 +31,6 @@ const PortfolioPage: NextPage<PortfolioPageProps> = ({ name, hero, metadata, com
     return <ErrorPage statusCode={500} />;
   }
 
-  console.log({ commercial, residential });
-
   return (
     <PageLayout hero={hero} seo={metadata}>
       <Section heading="Commercial">
@@ -94,11 +92,7 @@ export const getStaticProps: GetStaticProps = async context => {
     return { props: {} };
   }
 
-  console.log(pageData.attributes);
-
   const results = await cloudinary.search.expression(`folder=${portfolio}/*`).with_field('context').execute();
-
-  console.log(results);
 
   const { name, hero, commercial, residential, metadata } = pageData.attributes;
 

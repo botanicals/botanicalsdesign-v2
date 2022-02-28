@@ -28,8 +28,6 @@ const RetailContact: NextPage<RetailContactProps> = ({ name, hero, metadata, con
     return <ErrorPage statusCode={500} />;
   }
 
-  console.log({ contact });
-
   return (
     <PageLayout hero={hero} seo={metadata}>
       <Section>
@@ -73,8 +71,6 @@ export const getStaticProps: GetStaticProps = async context => {
   if (!pageData) {
     return { props: {} };
   }
-
-  console.log(pageData.attributes);
 
   const { name, hero, metadata, contactForm } = pageData.attributes;
 

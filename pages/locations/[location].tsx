@@ -26,8 +26,6 @@ const LocationPage: NextPage<LocationPageProps> = ({ name, hero, metadata, secti
     return <ErrorPage statusCode={500} />;
   }
 
-  console.log({ about, visit, additional, gallery, insider });
-
   return (
     <PageLayout hero={hero} seo={metadata}>
       <Section heading={about.heading}>
@@ -122,13 +120,9 @@ export const getStaticProps: GetStaticProps = async context => {
     return { props: {} };
   }
 
-  console.log(pageData.attributes);
-
   const { name, hero, aboutUs, visitUs, additionalContent, gallery, botanicalsInsider, metadata } = pageData.attributes;
 
   const results = await cloudinary.search.expression(`folder=${gallery.folder}`).with_field('context').execute();
-
-  console.log(results);
 
   return {
     props: {

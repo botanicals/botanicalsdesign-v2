@@ -25,8 +25,6 @@ const PostPage: NextPage<PostPageProps> = ({ name, hero, metadata, post }) => {
     return <ErrorPage statusCode={500} />;
   }
 
-  console.log({ post });
-
   return (
     <PageLayout heading={name} hero={hero} seo={metadata}>
       <Section>
@@ -83,8 +81,6 @@ export const getStaticProps: GetStaticProps = async context => {
   if (!postData || !blogData) {
     return { props: {} };
   }
-
-  console.log(postData.attributes);
 
   const { hero } = blogData.attributes;
 

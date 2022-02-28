@@ -36,8 +36,6 @@ const BlogPage: NextPage<BlogPageProps> = ({ name, heading, hero, metadata, post
     return <ErrorPage statusCode={500} />;
   }
 
-  console.log({ posts });
-
   return (
     <PageLayout heading={heading} hero={hero} seo={metadata}>
       <div className="blog-posts-container">

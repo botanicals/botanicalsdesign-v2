@@ -12,7 +12,6 @@ interface GalleryProps {
 }
 
 const Gallery: React.VFC<GalleryProps> = ({ images }) => {
-  console.log({ images });
   return (
     <div className="image-gallery">
       {images.map((image, index) => (
