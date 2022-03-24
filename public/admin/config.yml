@@ -804,6 +804,7 @@ collections:
   - name: 'jobs'
     label: 'Jobs'
     label_singular: 'Location'
+    summary: '{{name}}'
     identifier_field: metadata.slug
     create: true
     folder: /content/jobs
