@@ -49,6 +49,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   let paths: PagePaths[] = [];
 
   siteMap.forEach(({ parent, children }: SiteMap) => {
+    if (parent === 'jobs') return;
+
     let newPaths: PagePaths[];
     let childPaths: PagePaths[] = [];
 
