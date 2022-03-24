@@ -6,7 +6,7 @@ import { Section, Row, Column } from '../../components/layouts';
 const ContactThanks: NextPage = () => {
   return (
     <PageLayout
-      heading="Sorry..."
+      heading=""
       hero={{ heading: 'Thank you', subheading: '', image: { source: '/uploads/home-large-2x.jpg', alt: 'close up image of a glazed ceramic pot full of vibrant succulents' } }}
       seo={{ title: 'Thank you for your submission', slug: '' }}
     >
