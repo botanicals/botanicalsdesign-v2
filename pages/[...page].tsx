@@ -50,24 +50,25 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   siteMap.forEach(({ parent, children }: SiteMap) => {
     let newPaths: PagePaths[];
+    let childPaths: PagePaths[] = [];
 
     if (children?.length) {
-      newPaths = children.map(({ child }) => ({
+      childPaths = children.map(({ child }) => ({
         params: {
           page: [parent, child],
         },
       }));
-    } else {
-      newPaths = [
-        {
-          params: {
-            page: [parent],
-          },
-        },
-      ];
     }
 
-    paths = [...paths, ...newPaths];
+    newPaths = [
+      {
+        params: {
+          page: [parent],
+        },
+      },
+    ];
+
+    paths = [...paths, ...newPaths, ...childPaths];
   });
 
   return {
