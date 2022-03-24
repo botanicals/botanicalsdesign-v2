@@ -799,3 +799,42 @@ collections:
               { label: 'Twitter Card Type', name: 'twitterCardType', widget: 'select', options: ['summary', 'summary_large_image', 'app', 'player'], required: false },
             ],
         }
+
+  # Jobs
+  - name: 'jobs'
+    label: 'Jobs'
+    label_singular: 'Location'
+    identifier_field: metadata.slug
+    create: true
+    folder: /content/jobs
+    fields:
+      # Name
+      - { label: 'Name', name: 'name', widget: 'string' }
+
+      # Overview
+      - { label: 'Overview', name: 'overview', widget: 'markdown' }
+
+      # Positions
+      - {
+          label: 'Positions',
+          label_singular: 'Position',
+          name: 'positions',
+          widget: 'list',
+          fields: [{ label: 'Title', name: 'title', widget: 'string' }, { label: Slug, name: slug, widget: string }, { label: 'Description', name: description, widget: markdown }],
+        }
+
+      # Metadata
+      - {
+          label: 'Metadata',
+          name: 'metadata',
+          widget: 'object',
+          fields:
+            [
+              { label: 'Title', name: 'title', widget: 'string' },
+              { label: 'Slug', name: slug, widget: string },
+              { label: 'Description', name: 'description', widget: 'text', required: false },
+              { label: 'Share Image', name: 'shareImage', widget: 'image', required: false },
+              { label: 'Twitter Username', name: 'twitterUsername', widget: 'string', required: false },
+              { label: 'Twitter Card Type', name: 'twitterCardType', widget: 'select', options: ['summary', 'summary_large_image', 'app', 'player'], required: false },
+            ],
+        }

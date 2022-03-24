@@ -8,12 +8,12 @@ export const Section: React.FC<SectionProps> = ({ heading, fullWidth, children }
     <section className={fullWidth ? 'section section--full-width' : 'section'}>
       {fullWidth ? (
         <div className="section__full-width-content-container">
-          <h2 className="heading heading__h2">{heading}</h2>
+          {heading ? <h2 className="heading heading__h2">{heading}</h2> : null}
           {children}
         </div>
       ) : (
         <>
-          <h2 className="heading heading__h2">{heading}</h2>
+          {heading ? <h2 className="heading heading__h2">{heading}</h2> : null}
           {children}
         </>
       )}

@@ -22,9 +22,9 @@ const Footer = () => {
         <Row>
           <Column width={100}>
             <h3 className="heading heading__h5 heading__h5--green">{footerLocations.heading}</h3>
-            <div className="grid grid-cols-2 gap-8 mt-2 md:grid-cols-3">
+            <div className="grid gap-8 pb-16 mt-2 border-b border-[#1f1f1f] sm:grid-cols-2 md:grid-cols-3">
               {footerLocations.locations.map((location, index) => (
-                <div key={index}>
+                <div key={index} className="">
                   <li className="navigation__list">
                     <Link href={location.href}>
                       <a className="navigation__links navigation__links--footer">
@@ -61,7 +61,7 @@ const Footer = () => {
         </Row>
 
         <Row>
-          <Column width={100}>
+          <Column width={66}>
             <h3 className="heading heading__h5 heading__h5--green">Explore our Site</h3>
             <div className="grid grid-cols-2">
               {footerNavigation.map((item, index) => (
@@ -86,10 +86,10 @@ const Footer = () => {
             </div>
           </Column>
 
-          <Column width={100}>
+          <Column width={33}>
             <h3 className="heading heading__h5 heading__h5--green">The Botanicals Family of Businesses</h3>
 
-            <div className="grid gap-8 mt-12 sm:grid-cols-3 lg:grid-cols-2">
+            <div className="grid grid-cols-2 gap-8 mt-12 sm:grid-cols-3 lg:grid-cols-2">
               <div>
                 <a href="https://gibbyfloral.com" target="_blank" rel="noreferrer">
                   <img src="/assets/bfob/gibby-floral.png" alt="gibby floral" />
@@ -113,17 +113,7 @@ const Footer = () => {
 
         <Row>
           <Column centered width={100}>
-            <span className="footer__copywrite-span">
-              &copy; 2021 BY BOTANICALS
-              {/* <Link><a>
-              href="http://talondurrant.com"
-              target="_blank"
-              className="footer__copywrite-link"
-              rel="noreferrer"
-            >
-              TALON DURRANT
-            </a></Link> */}
-            </span>
+            <span className="footer__copywrite-span">&copy; {new Date().getFullYear()} By Botanicals. All rights reserved.</span>
           </Column>
         </Row>
       </Section>

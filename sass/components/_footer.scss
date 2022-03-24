@@ -23,7 +23,7 @@
   &__logo {
     // styles the footer logo at the top
     top: 4rem;
-    padding: 2rem;
+    padding: 2rem 0;
   }
 
   &__icon {
@@ -46,6 +46,7 @@
     // styles the copywrite footer span thingy
     color: rgb(124, 124, 124);
     font-size: 1rem;
+    text-transform: uppercase;
   }
 
   &__copywrite-link {

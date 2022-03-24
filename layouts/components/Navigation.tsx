@@ -40,7 +40,7 @@ const Navigation: React.VFC<NavigationProps> = ({ navigation }) => {
           <li key={index} className="parent-nav">
             <Link href={`/${item.path! || item.href!}`}>
               <a className="navigation__links">
-                {item.name} {item.children?.length ? '>' : ''}
+                {item.name} {item.children?.length ? <span>&#9662;</span> : ''}
               </a>
             </Link>
             {item.children?.length && (
