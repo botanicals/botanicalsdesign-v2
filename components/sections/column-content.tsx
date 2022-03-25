@@ -1,5 +1,8 @@
 import { Fragment } from 'react';
+import classNames from '../../utils/class-names';
 import Button from '../elements/button';
+import FeatureBox from '../elements/feature-box';
+import Image from '../elements/image';
 import { Row, Column, Section } from '../layouts';
 
 import MarkdownText from '../utility/markdown-text';
@@ -34,12 +37,7 @@ const ContentSection: React.VFC<{ sections: ContentSectionProps[] }> = ({ sectio
         }
 
         if (section.type === 'image') {
-          return (
-            <figure key={index}>
-              <img src={section.source} alt={section.alt} />
-              <figcaption>{section.caption}</figcaption>
-            </figure>
-          );
+          return <Image key={index} source={section.source!} alt={section.alt!} caption={section.caption} />;
         }
 
         if (section.type === 'button') {
@@ -51,11 +49,7 @@ const ContentSection: React.VFC<{ sections: ContentSectionProps[] }> = ({ sectio
         }
 
         if (section.type === 'featureBox') {
-          return (
-            <h3 key={index} className="heading heading__h3 heading__h3--green heading__quote">
-              {section.text}
-            </h3>
-          );
+          return <FeatureBox key={index} text={section.text!} />;
         }
 
         return 'Error';
@@ -67,14 +61,14 @@ const ContentSection: React.VFC<{ sections: ContentSectionProps[] }> = ({ sectio
 const ColumnContent: React.FC<ColumnContentProps> = ({ data }) => {
   return (
     <Section heading={data.heading}>
-      <Row>
-        <Column width={data.layout === '1/3 | 2/3' ? 33 : data.layout === '2/3 | 1/3' ? 66 : 50}>
+      <div className={classNames(data.layout === '1/3 | 2/3' ? 'md:grid-cols-3' : data.layout === '2/3 | 1/3' ? 'md:grid-cols-3' : 'md:grid-cols-2', `grid gap-x-8 bg-blue-200`)}>
+        <div className={classNames(data.layout === '1/3 | 2/3' ? 'col-span-1' : data.layout === '2/3 | 1/3' ? 'md:col-span-2' : 'col-span-1')}>
           <ContentSection sections={data.leftColumn} />
-        </Column>
-        <Column width={data.layout === '1/3 | 2/3' ? 66 : data.layout === '2/3 | 1/3' ? 33 : 50}>
+        </div>
+        <div className={classNames(data.layout === '1/3 | 2/3' ? 'md:col-span-2' : data.layout === '2/3 | 1/3' ? 'col-span-1' : 'col-span-1')}>
           <ContentSection sections={data.rightColumn} />
-        </Column>
-      </Row>
+        </div>
+      </div>
     </Section>
   );
 };

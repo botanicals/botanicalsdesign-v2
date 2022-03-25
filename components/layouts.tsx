@@ -1,3 +1,5 @@
+import classNames from '../utils/class-names';
+
 interface SectionProps {
   heading?: string;
   fullWidth?: boolean;
@@ -5,18 +7,11 @@ interface SectionProps {
 
 export const Section: React.FC<SectionProps> = ({ heading, fullWidth, children }) => {
   return (
-    <section className={fullWidth ? 'section section--full-width' : 'section'}>
-      {fullWidth ? (
-        <div className="section__full-width-content-container">
-          {heading ? <h2 className="heading heading__h2">{heading}</h2> : null}
-          {children}
-        </div>
-      ) : (
-        <>
-          {heading ? <h2 className="heading heading__h2">{heading}</h2> : null}
-          {children}
-        </>
-      )}
+    <section className={classNames(fullWidth ? 'max-w-none' : 'max-w-[1600px]', 'mx-auto mt-12 px-8')}>
+      <div className={classNames(fullWidth ? '' : '')}>
+        {heading ? <h2 className="mb-4 heading text-primary-orange">{heading}</h2> : null}
+        {children}
+      </div>
     </section>
   );
 };

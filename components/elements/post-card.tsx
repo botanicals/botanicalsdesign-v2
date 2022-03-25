@@ -8,16 +8,18 @@ interface PostCardProps {
 }
 
 const PostCard: React.FC<PostCardProps> = ({ post }) => (
-  <div className="blog__card">
-    <img src={post.image.source} alt={post.image.alt} />
-    <div className="blog__details">
-      <h2>{post.name}</h2>
-      <p className="blog__metadata">
-        {post.author} | {formatDate(post.date)}
-      </p>
-      <p>{post.excerpt}</p>
+  <div className="shadow-md">
+    <img className="w-full" src={post.image.source} alt={post.image.alt} />
+    <div className="p-4">
+      <div>
+        <h2 className="text-xl uppercase text-primary-red">{post.name}</h2>
+        <p className="mt-1 text-base text-gray-700">
+          {post.author} | {formatDate(post.date)}
+        </p>
+      </div>
+      <p className="my-3 text-lg line-clamp-3">{post.excerpt}</p>
       <Link href={`/blog/${post.metadata.slug}`}>
-        <a className="blog__read-more">Read More &#8811;</a>
+        <a className="block my-2 text-lg font-medium text-primary-red hover:underline">Read More &#8811;</a>
       </Link>
     </div>
   </div>

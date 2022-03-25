@@ -9,7 +9,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>{/* Google Fonts Here */}</Head>
+        <Head>
+          {/* TypeKit Fonts Here */}
+          <link rel="stylesheet" href="https://use.typekit.net/vhr8hcq.css"></link>
+        </Head>
         <body>
           <Main />
           <NextScript />

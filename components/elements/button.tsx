@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import classNames from '../../utils/class-names';
 
 interface ButtonProps {
   href: string;
@@ -9,7 +10,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ href, inverse, external, children }) => {
   if (external) {
     return (
-      <a className={`button ${inverse && 'button--inverse'}`} href={href}>
+      <a className={classNames(inverse ? '' : '', 'text-primary-red font-bold')} href={href}>
         {children} <strong>&#8811;</strong>
       </a>
     );
@@ -17,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({ href, inverse, external, children }) =>
 
   return (
     <Link href={href}>
-      <a className={`button ${inverse && 'button--inverse'}`}>
+      <a className={classNames(inverse ? '' : '', 'text-primary-red font-semibold text-xl py-4 block')}>
         {children} <strong>&#8811;</strong>
       </a>
     </Link>

@@ -19,16 +19,14 @@ interface BasicContentProps {
 const BasicContent: React.FC<BasicContentProps> = ({ data }) => {
   return (
     <Section heading={data.heading}>
-      <Row>
-        <Column width={100}>
-          <MarkdownText>{data.content}</MarkdownText>
-          {data.button && data.button.href && data.button.text && (
-            <Button href={data.button.href} external={data.button.external}>
-              {data.button.text}
-            </Button>
-          )}
-        </Column>
-      </Row>
+      <div>
+        <MarkdownText>{data.content}</MarkdownText>
+        {data.button && data.button.href && data.button.text && (
+          <Button href={data.button.href} external={data.button.external}>
+            {data.button.text}
+          </Button>
+        )}
+      </div>
     </Section>
   );
 };

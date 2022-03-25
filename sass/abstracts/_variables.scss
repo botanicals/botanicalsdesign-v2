@@ -21,16 +21,11 @@ $color-primary-orange: #f4a702;
 $color-black: #000;
 $color-white: #fff;
 $color-light-gray: rgb(179, 179, 179);
-$header-banner-color: rgba(
-  0,
-  0,
-  0,
-  0.85
-); // this is for adjusting the opacity of the header and banner in header.php
+$header-banner-color: rgba(0, 0, 0, 0.85); // this is for adjusting the opacity of the header and banner in header.php
 
 // FONT SIZE
-$font-size-default: 1.6rem;
-$font-size-body: 2rem; // not positive what this variable is for -- figure it out
-$font-size-paragraph: 2.2rem;
+$font-size-default: 1.5rem;
+$font-size-body: 1.5rem; // not positive what this variable is for -- figure it out
+$font-size-paragraph: 1.8rem;
 
 // END VARIABLES //

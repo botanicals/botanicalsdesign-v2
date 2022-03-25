@@ -19,8 +19,8 @@ const PageLayout: React.FC<PageLayoutProps> = ({ hero, heading, seo, children })
           <Banner />
           <Header />
           <Hero heading={hero.heading} subheading={hero.subheading} image={hero.image} cta={hero.cta} />
-          <main className="main__content-container">
-            {heading ? <h1 className="heading heading__h1">{heading}</h1> : null}
+          <main className="pt-8 pb-4">
+            {heading ? <h1 className="mx-auto heading text-primary-red max-w-[1600px] px-8">{heading}</h1> : null}
             {children}
           </main>
         </div>

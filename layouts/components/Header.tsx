@@ -9,15 +9,15 @@ const Header = () => {
   const { headerNavigation } = navigation as INavigation;
 
   return (
-    <header className="header">
+    <header className="bg-[rgba(0,0,0,.85)] relative h-24">
       <Link href="/">
-        <a className="header__logo header__logo--desktop">
+        <a className="hidden md:block">
           <img src="/assets/logos/botanicals-logo.png" alt="botanicals logo" />
         </a>
       </Link>
       <Link href="/">
-        <a className="header__logo header__logo--mobile">
-          <img className="header__logo--mobile-image" src="/assets/logos/botanicals-logo-mobile.png" alt="botanicals logo" />
+        <a className="md:hidden">
+          <img src="/assets/logos/botanicals-logo-mobile.png" alt="botanicals logo" />
         </a>
       </Link>
       <Navigation navigation={headerNavigation} />

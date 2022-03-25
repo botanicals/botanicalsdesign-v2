@@ -12,7 +12,7 @@ const Footer = () => {
   const { footerNavigation, footerLocations } = navigation as Navigation;
 
   return (
-    <footer className="footer">
+    <footer className="bg-black">
       <Section>
         <Row>
           <Column width={100}>

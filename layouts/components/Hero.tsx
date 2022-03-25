@@ -20,7 +20,7 @@ export interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ heading, subheading, image, cta }) => {
   return (
     <>
-      <div className={`hero-image-container`} style={{ backgroundImage: `url(${image.source})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
+      <div className={``} style={{ backgroundImage: `url(${image.source})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
         <div>
           <div className="hero-image-container__page-banner">
             <div className={`page-banner__container`}>
@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ heading, subheading, image, cta }) => {
       </div>
 
       {(cta?.heading || cta?.text) && (
-        <div className="cta-banner">
+        <div className="bg-primary-green">
           <div className="cta-banner-container">
             <p className="cta-banner-container__text">
               <span className="cta-banner-container__text--heading">{cta.heading}</span> {cta.text}

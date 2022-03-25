@@ -15,7 +15,7 @@ const Banner = () => {
   const { siteBanner } = global;
 
   return (
-    <div className="top-notification-banner">
+    <div className="bg-primary-red">
       <p>
         {siteBanner.longText}{' '}
         {siteBanner.link.external ? (

@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import Button from '../elements/button';
+import Image from '../elements/image';
 import { Row, Column, Section } from '../layouts';
 
 import MarkdownText from '../utility/markdown-text';
@@ -24,24 +25,22 @@ interface ContentOnImagesProps {
 const ContentOnImages: React.FC<ContentOnImagesProps> = ({ data }) => {
   return (
     <Section heading="A Botanicals plantscape">
-      <Row>
+      <div className="">
         <Column width={100}>
           <MarkdownText>{data.content}</MarkdownText>
           <Button href={data.button.href} external={data.button.external}>
             {data.button.text}
           </Button>
         </Column>
-      </Row>
-      <Row>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-x-8">
         {data.images.map((image, index) => (
-          <Column key={index} width={33}>
-            <figure>
-              <img src={image.source} alt={image.alt} />
-              <figcaption>{image.caption}</figcaption>
-            </figure>
-          </Column>
+          <div key={index}>
+            <Image source={image.source} alt={image.alt} caption={image.caption} />
+          </div>
         ))}
-      </Row>
+      </div>
     </Section>
   );
 };

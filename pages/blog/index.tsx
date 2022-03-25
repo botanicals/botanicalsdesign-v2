@@ -38,7 +38,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ name, heading, hero, metadata, post
 
   return (
     <PageLayout heading={heading} hero={hero} seo={metadata}>
-      <div className="blog-posts-container">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 px-8 gap-8 max-w-[1600px] mx-auto">
         {posts.map((post, index) => (
           <PostCard key={index} post={post} />
         ))}

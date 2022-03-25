@@ -21,7 +21,7 @@ const Navigation: React.VFC<NavigationProps> = ({ navigation }) => {
   }
 
   return (
-    <nav className="navigation">
+    <nav className="bg-blue-200">
       <button onClick={hamburgerClick} id="hamburger">
         <span>
           <i>&#9776;</i>

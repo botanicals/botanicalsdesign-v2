@@ -19,32 +19,32 @@ interface VisitOurLocationsProps {
 const VisitOurLocations: React.FC<VisitOurLocationsProps> = ({ data }) => {
   return (
     <Section heading={data.heading}>
-      <Row>
-        <Column width={100}>
-          <MarkdownText>{data.content}</MarkdownText>
-        </Column>
-      </Row>
-      <Row>
-        <Column width={33}>
+      <div>
+        <MarkdownText>{data.content}</MarkdownText>
+      </div>
+
+      <div className="grid mt-4 md:grid-cols-3 gap-x-8">
+        <div>
           <figure>
             <img src={data.images.kaysville} alt="A collection of pottery at Botanicals Kaysville retail location" />
           </figure>
           <Button href="/locations/kaysville">Botanicals Kaysville</Button>
-        </Column>
+        </div>
 
-        <Column width={33}>
+        <div>
           <figure>
             <img src={data.images.sandy} alt="A collection of pottery at Botanicals Sandy retail location" />
           </figure>
           <Button href="/locations/sandy">Botanicals Sandy</Button>
-        </Column>
-        <Column width={33}>
+        </div>
+
+        <div>
           <figure>
             <img src={data.images.stGeorge} alt="A collection of pottery at Botanicals St George retail location" />
           </figure>
           <Button href="/locations/saint-george">Botanicals St George</Button>
-        </Column>
-      </Row>
+        </div>
+      </div>
     </Section>
   );
 };
