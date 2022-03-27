@@ -1,6 +1,7 @@
 ---
 name: Kaysville
-overview: Please send application material to DianaG@botanicalsdesign.com.
+overview: Please send application material to DianaG@BotanicalsDesign.com &
+  DallinW@BotanicalsDesign.com
 positions:
   - title: General Laborer
     slug: general-laborer
