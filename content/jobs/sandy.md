@@ -1,6 +1,6 @@
 ---
 name: Sandy
-overview: Please send application material to DallinW@botanicalsdesign.com
+overview: Please send application material to DallinW@BotanicalsDesign.com
 positions:
   - title: Store Manager
     slug: store-manager
