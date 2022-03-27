@@ -1,6 +1,6 @@
 ---
 name: Saint George
-overview: Please send application material to DallinW@botanicalsdesign.com.
+overview: Please send application material to RobynG@BotanicalsDesign.com.
 positions:
   - title: Delivery Driver / General Laborer
     slug: delivery-driver-general-laborer
