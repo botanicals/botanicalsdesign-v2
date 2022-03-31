@@ -31,6 +31,12 @@ positions:
       * Must be 18+
 
 
+      #### Compensation:
+
+
+      * $11.50-$14.50/hr DOE
+
+
       #### To Apply:
 
 
@@ -70,6 +76,12 @@ positions:
       * Must be able to work in outdoor conditions in all weather
 
       * Must be able to lift 30+ pounds
+
+
+      #### Compensation:
+
+
+      * $11.50-$14.50/hr DOE
 
 
       #### To Apply: 
@@ -117,6 +129,12 @@ positions:
       * Must be able to lift 30+ pounds
 
 
+      #### Compensation:
+
+
+      * $11.50-$14.50/hr DOE
+
+
       #### To Apply: 
 
 
@@ -156,6 +174,12 @@ positions:
       * Must be able to work in outdoor conditions in all weather
 
       * Must be able to lift 50+ pounds
+
+
+      #### Compensation:
+
+
+      * $11.50-$14.50/hr DOE
 
 
       #### To Apply: 
