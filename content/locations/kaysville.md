@@ -65,7 +65,7 @@ visitUs:
     Monday - Thursday 9:00AM – 5:00PM
 
 
-    Friday - Saturday 8:00AM-6:00PM
+    Friday - Saturday 8:00AM - 6:00PM
 
 
     ### Winter hours
