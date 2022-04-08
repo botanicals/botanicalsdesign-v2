@@ -62,7 +62,7 @@ visitUs:
     ##### March – October
 
 
-    Monday-Thursday 9:00AM – 5:00PM
+    Monday - Thursday 9:00AM – 5:00PM
 
 
     Friday - Saturday 8:00AM-6:00PM
