@@ -62,7 +62,7 @@ visitUs:
     ##### March – October
 
 
-    Monday-Saturday 8:00AM – 6:00PM
+    Monday-Saturday 8:00AM – 5:00PM
 
 
     ### Winter hours
