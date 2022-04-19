@@ -186,7 +186,7 @@ positions:
 
 
       Submit Resume, cover letter, and at least 2 references.
-  - title: St. George Botanicals Pottery Shop Retail Customer Service and Sales
+  - title: Pottery Shop Retail Customer Service and Sales - Bluff Street
     slug: st-george-pottery-shop-retail
     description: >-
       Botanicals, Inc. in St George, UT is looking for several candidates to
