@@ -2,7 +2,7 @@
 name: Saint George
 overview: Please send application material to RobynG@BotanicalsDesign.com.
 positions:
-  - title: Delivery Driver / General Laborer
+  - title: Delivery Driver / General Laborer - Bluff Street
     slug: delivery-driver-general-laborer
     description: >-
       #### Responsibilities:
@@ -34,7 +34,7 @@ positions:
       #### Compensation:
 
 
-      * $11.50-$14.50/hr DOE
+      * $13.00-$15.00/hr DOE
 
 
       #### To Apply:
