@@ -139,7 +139,7 @@ positions:
 
 
       Submit Resume, cover letter, and at least 2 references.
-  - title: Outdoor Planting / Maintenance
+  - title: Outdoor Planting / Maintenance - Bluff Street
     slug: outdoor-planting-maintenance
     description: >-
       #### Responsibilities:
@@ -179,7 +179,7 @@ positions:
       #### Compensation:
 
 
-      * $11.50-$14.50/hr DOE
+      * $13.00-15.00/hr DOE
 
 
       #### To Apply: 
