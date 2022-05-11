@@ -127,49 +127,6 @@ positions:
 
 
       Submit Resume, cover letter, and at least 2 references.
-  - title: Irrigation Specialist
-    slug: irrigation-specialist
-    description: >-
-      #### About the job
-
-
-      We are looking for an irrigation specialist for our large nursery operation in Kaysville, UT. We need one or more persons who can work somewhat flexibly to ensure that our water systems, drip-line maintenance, and hose-watering is completed each day. 
-
-
-      #### Responsibilities
-
-
-      * Interface with our app-based time clocks for different watering zones.
-
-      * Check drip lines to each tree to ensure they are working properly and to cap off unused lines after individual trees have been moved or sold. 
-
-      * Hand-water greenhouse and display benches.
-
-      * Coordinate with our team to replace and repair issues as they arise.
-
-
-      #### Compensation
-
-
-      $14.00 / hr to $16.00 / hr
-
-
-      #### Qualifications
-
-
-      * 1 year or more in working with irrigation systems.
-
-      * Self-starting, hard-working, trustworthy.
-
-      * Ability to work alone or in group settings. 
-
-      * Great communication skills. 
-
-
-      #### How to apply
-
-
-      Submit Resume, cover letter, and at least 2 references.
 metadata:
   title: Jobs - Botanicals Kaysville
   slug: kaysville
