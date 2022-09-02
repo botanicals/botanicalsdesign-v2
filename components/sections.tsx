@@ -10,6 +10,7 @@ import MeetTheOwners from './sections/meet-the-owners';
 import RequestAConsulation from './sections/request-a-consultation';
 import DesignProcess from './sections/design-process';
 import PlantscapeMaintenance from './sections/plantscape-maintenance';
+import YoutubeEmbed from './sections/youtube-embed';
 
 // Map object keys to section components
 const sectionComponents: { [key: string]: React.FC<any> } = {
@@ -23,6 +24,7 @@ const sectionComponents: { [key: string]: React.FC<any> } = {
   requestAConsultation: RequestAConsulation,
   designProcess: DesignProcess,
   plantscapeMaintenance: PlantscapeMaintenance,
+  youtubeEmbed: YoutubeEmbed,
 };
 
 // Display a section individually
