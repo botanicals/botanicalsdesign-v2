@@ -116,6 +116,8 @@ footerNavigation:
             path: about
           - name: Job Openings
             path: jobs
+          - name: Winterize Your Fountains
+            path: winterizefountains
   - heading: Work with us
     groups:
       - name: Design professionals
