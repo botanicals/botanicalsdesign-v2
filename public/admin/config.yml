@@ -258,7 +258,7 @@ collections:
         }
 
       # Page Heading
-      - { label: Page Heading, name: heading, widget: string, required: false }
+      - { label: Page Heading, name: heading, widget: string }
 
       # Sections
       - {
@@ -464,6 +464,7 @@ collections:
               },
               { label: Design Process, name: designProcess, widget: object, fields: [{ label: Heading, name: heading, widget: string }] },
               { label: Plantscape Maintenance, name: plantscapeMaintenance, widget: object, fields: [{ label: Heading, name: heading, widget: string }] },
+              { label: YouTube Embed, name: youtubeEmbed, widget: object, fields: [{ label: Title, name: title, widget: string }, { label: Embed Id, name: embedId, widget: string }] },
             ],
         }
 
