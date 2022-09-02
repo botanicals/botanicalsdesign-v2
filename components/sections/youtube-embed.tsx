@@ -15,8 +15,7 @@ const YoutubeEmbed: React.FC<YoutubeEmbedProps> = ({ data: { title, embedId } })
       <Row>
         <Column width={100}>
           <iframe
-            width="853"
-            height="480"
+            className="w-full lg:w-[853px] h-[480px]"
             src={`https://www.youtube.com/embed/${embedId}`}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
