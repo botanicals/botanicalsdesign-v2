@@ -11,9 +11,10 @@ import { Section, Row, Column } from '../../components/layouts';
 
 type PortfolioSection = {
   heading: string;
-  folder: string;
   images: {
-    secure_url: string;
+    source: string;
+    alt?: string;
+    caption?: string;
   }[];
 };
 
@@ -41,7 +42,7 @@ const PortfolioPage: NextPage<PortfolioPageProps> = ({ name, hero, metadata, com
               <div className="space-y-8">
                 {images.map((image, index) => (
                   <figure key={index}>
-                    <img src={image.secure_url} alt={`${name} portfolio - Commercial - ${heading} - ${index}`} />
+                    <img src={image.source} alt={image.alt || `${name} portfolio - Commercial - ${heading} - ${index}`} />
                   </figure>
                 ))}
               </div>
@@ -58,7 +59,7 @@ const PortfolioPage: NextPage<PortfolioPageProps> = ({ name, hero, metadata, com
               <div className="space-y-8">
                 {images.map((image, index) => (
                   <figure key={index}>
-                    <img src={image.secure_url} alt={`${name} portfolio - Residential - ${heading} - ${index}`} />
+                    <img src={image.source} alt={image.alt || `${name} portfolio - Residential - ${heading} - ${index}`} />
                   </figure>
                 ))}
               </div>
@@ -96,8 +97,6 @@ export const getStaticProps: GetStaticProps = async context => {
     return { props: {} };
   }
 
-  const results = await cloudinary.search.expression(`folder=${portfolio}/*`).with_field('context').execute();
-
   const { name, hero, commercial, residential, metadata } = pageData.attributes;
 
   return {
@@ -105,11 +104,8 @@ export const getStaticProps: GetStaticProps = async context => {
       name,
       hero,
       metadata,
-      commercial: commercial.map((com: { folder: string }) => ({ ...com, images: results.resources.filter((image: { folder: string }) => image.folder === `${portfolio}/commercial/${com.folder}`) })),
-      residential: residential.map((res: { folder: string }) => ({
-        ...res,
-        images: results.resources.filter((image: { folder: string }) => image.folder === `${portfolio}/residential/${res.folder}`),
-      })),
+      commercial,
+      residential,
     },
   };
 };

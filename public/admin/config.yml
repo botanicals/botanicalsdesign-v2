@@ -515,7 +515,20 @@ collections:
           label_singular: Feature,
           name: 'commercial',
           widget: 'list',
-          fields: [{ label: Heading, name: heading, widget: string }, { label: Folder, name: folder, widget: string, hint: This is the folder where the images are stored in Cloudinary }],
+          fields:
+            [
+              { label: Heading, name: heading, widget: string },
+              { label: Folder, name: folder, widget: string, hint: This is the folder where the images are stored in Cloudinary },
+              {
+                label: Images,
+                label_singular: Image,
+                name: images,
+                widget: list,
+                required: true,
+                fields:
+                  [{ label: Source, name: source, widget: image }, { label: Alt, name: alt, widget: string, required: false }, { label: Caption, name: caption, widget: string, required: false }],
+              },
+            ],
         }
 
       # Residential
@@ -524,7 +537,20 @@ collections:
           label_singular: Feature,
           name: 'residential',
           widget: 'list',
-          fields: [{ label: Heading, name: heading, widget: string }, { label: Folder, name: folder, widget: string, hint: This is the folder where the images are stored in Cloudinary }],
+          fields:
+            [
+              { label: Heading, name: heading, widget: string },
+              { label: Folder, name: folder, widget: string, hint: This is the folder where the images are stored in Cloudinary },
+              {
+                label: Images,
+                label_singular: Image,
+                name: images,
+                widget: list,
+                required: true,
+                fields:
+                  [{ label: Source, name: source, widget: image }, { label: Alt, name: alt, widget: string, required: false }, { label: Caption, name: caption, widget: string, required: false }],
+              },
+            ],
         }
 
         # Metadata
