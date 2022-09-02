@@ -48,6 +48,122 @@ visitUs:
 gallery:
   heading: Gallery
   folder: st-george
+  images:
+    - columns: 1
+      rows: 1
+      source: /uploads/walltreehanger_1_xcrfo4.jpg
+      alt: wall tree hanger decor at botanicals st george
+    - columns: 1
+      rows: 1
+      source: /uploads/untitled-5331_nyjc3g.jpg
+      alt: pink metal art flamingo at botanicals st george
+    - columns: 1
+      rows: 1
+      alt: flower in a ceramic pot at botanicals saint george
+      source: /uploads/untitled-5328_lbpi3i.jpg
+    - columns: 1
+      rows: 1
+      alt: statue of child reading at botanicals saint george
+      source: /uploads/untitled-5326_yknumt.jpg
+    - columns: 1
+      rows: 1
+      alt: modern decor with lightbulbs at botanicals st george
+      source: /uploads/untitled-5296_w2sfz4.jpg
+    - columns: 1
+      rows: 1
+      alt: close up of ceramic fountain fish head spout at botanicals saint george
+      source: /uploads/untitled-5275_pmppwk.jpg
+    - columns: 1
+      rows: 1
+      alt: close up of intricate art on ceramic pottery at botanicals st george
+      source: /uploads/untitled-5274_g0la1a.jpg
+    - columns: 1
+      rows: 1
+      alt: close up of intricate door head art on ceramic pot at botanicals saint
+        george
+      source: /uploads/untitled-5273_d1oi22.jpg
+    - columns: 1
+      rows: 1
+      alt: intricate art on a glazed ceramic pot at botanicals st george
+      source: /uploads/untitled-5270_zfdg5b.jpg
+    - columns: 1
+      rows: 1
+      alt: colorful metal flower decor in glazed ceramic pottery
+      source: /uploads/_mg_1041_iewfh8.jpg
+    - columns: 1
+      rows: 1
+      alt: zebra metal art in front of ceramic pottery at botanicals saint george
+      source: /uploads/untitled-5198_zrn9kd.jpg
+    - columns: 1
+      rows: 1
+      alt: ceramic pottery display at botanicals st george
+      source: /uploads/img_4228_cis1im.jpg
+    - columns: 3
+      rows: 1
+      alt: botanicals exclusive pottery display at botanicals saint george retail lot
+      source: /uploads/untitled-_liwibv.jpg
+    - columns: 4
+      rows: 1
+      alt: storefront of our st george retail location
+      source: /uploads/shopshot_1_pano_km50ny.jpg
+    - columns: 2
+      rows: 1
+      alt: beautiful flowers in a blue glazed ceramic pot at botanicals st george
+      source: /uploads/img_9483_vrtikp.jpg
+    - columns: 2
+      rows: 1
+      alt: metal sun art at botanicals saint george
+      source: /uploads/img_8611_gqxq13.jpg
+    - columns: 1
+      rows: 1
+      alt: custom fountain created with botanicals exclusive pottery at botanicals
+        sandy
+      source: /uploads/img_4553_b9ajvq.jpg
+    - columns: 2
+      rows: 1
+      alt: beautiful flowers and metal art in glazed ceramic pottery at botanicals st
+        george
+      source: /uploads/untitled-5229_hhnqls.jpg
+    - columns: 2
+      rows: 1
+      alt: botanicals exclusive pottery display at botanicals st george
+      source: /uploads/geometric_2_i3y6x0.jpg
+    - columns: 2
+      rows: 1
+      alt: botanicals exclusive pottery display at botanicals saint george
+      source: /uploads/flatblackbatch_1_auvvos.jpg
+    - columns: 1
+      rows: 1
+      alt: blue bird on terracotta pottery at botanicals st george
+      source: /uploads/bluebird_1_y1fxbn.jpg
+    - columns: 1
+      rows: 1
+      alt: textured ceramic pot at botanicals saint george
+      source: /uploads/_mg_1092_zpxtlw.jpg
+    - columns: 1
+      rows: 1
+      alt: gorgeous interior display at botanicals st george
+      source: /uploads/_mg_1086_qhfswq.jpg
+    - columns: 1
+      rows: 1
+      alt: beautiful metal bird perched in the air at botanicals st george
+      source: /uploads/_mg_1061_lfriuz.jpg
+    - columns: 2
+      rows: 1
+      alt: metal art and ceramic pottery display at botanicals saint george
+      source: /uploads/untitled-5197_jbdjzi.jpg
+    - columns: 1
+      rows: 1
+      alt: beautiful interior display at botanicals st george
+      source: /uploads/_mg_1010_x3xzh2.jpg
+    - columns: 2
+      rows: 1
+      alt: interior display with plants at botanicals st george
+      source: /uploads/_mg_0979_hlznkq.jpg
+    - columns: 1
+      rows: 1
+      alt: metal seahorse decor on subtropical leaf at botanicals saint george
+      source: /uploads/_mg_0964_tmsgdl.jpg
 botanicalsInsider:
   heading: More than just pots...
   content: We offer more than just pottery and decor at our retail locations. We

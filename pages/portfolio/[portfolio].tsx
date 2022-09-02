@@ -1,8 +1,6 @@
 import ErrorPage from 'next/error';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 
-import cloudinary from '../../lib/cloudinary';
-
 import PageLayout from '../../layouts/PageLayout';
 import { Metadata } from '../../layouts/components/Seo';
 import { HeroProps } from '../../layouts/components/Hero';

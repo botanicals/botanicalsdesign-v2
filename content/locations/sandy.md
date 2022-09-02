@@ -48,6 +48,88 @@ visitUs:
 gallery:
   heading: Gallery
   folder: sandy
+  images:
+    - columns: 1
+      rows: 1
+      alt: tree in ceramic pot at botanicals sandy
+      source: /uploads/untitled-9589_lqje66.jpg
+    - columns: 2
+      rows: 1
+      alt: pottery display at botanicals sandy
+      source: /uploads/untitled-9535_b3lmbc.jpg
+    - columns: 1
+      rows: 1
+      alt: lit firepot outdoors at botanicals sandy
+      source: /uploads/untitled-2588_cax4yh.jpg
+    - columns: 1
+      rows: 1
+      alt: small ceramic pottery with snow on top at botanicals sandy
+      source: /uploads/untitled-2512_akcbhm.jpg
+    - columns: 1
+      rows: 1
+      alt: ceramic decor display in the snow at botanicals sandy
+      source: /uploads/untitled-2438_tbxxja.jpg
+    - columns: 1
+      rows: 1
+      alt: metal art of a red truck at botanicals sandy
+      source: /uploads/untitled-2406_cv3rca.jpg
+    - columns: 1
+      rows: 1
+      alt: metal art of a flower at botanicals sandy
+      source: /uploads/untitled-2361_keuegt.jpg
+    - columns: 2
+      rows: 1
+      alt: rustic metal animal decor at botanicals sandy
+      source: /uploads/untitled-2322_uncmgl.jpg
+    - columns: 2
+      rows: 1
+      alt: bonsai pottery for sale at botanicals sandy
+      source: /uploads/untitled-2316_undpjz.jpg
+    - columns: 1
+      rows: 1
+      alt: glazed bonsai pottery for sale at botanicals sandy
+      source: /uploads/untitled-2306_hqyw7z.jpg
+    - columns: 1
+      rows: 1
+      alt: orange metal wind spinner in botanicals sandy retail lot
+      source: /uploads/untitled-2289_lxr9wa.jpg
+    - columns: 1
+      rows: 1
+      alt: fire globes during winter at botanicals sandy
+      source: /uploads/untitled-2277_t04fzu.jpg
+    - columns: 2
+      rows: 1
+      alt: mothers day pottery display at botanicals sandy
+      source: /uploads/img_4349_vjxcqe.jpg
+    - columns: 2
+      rows: 1
+      alt: beautiful pottery display at botanicals sandy
+      source: /uploads/img_4796_oxlchp.jpg
+    - columns: 1
+      rows: 1
+      alt: two people bringing ceramic decor to the front of the lot at botanicals
+        sandy
+      source: /uploads/img_4320_ldtdju.jpg
+    - columns: 1
+      rows: 1
+      alt: cute dog peeking through the window of botanicals sandy building
+      source: /uploads/img_4314_mlwavt.jpg
+    - columns: 2
+      rows: 1
+      alt: display of botanicals exclusive pottery at botanicals sandy retail lot
+      source: /uploads/0z6a9617-pano_u09f2g.jpg
+    - columns: 1
+      rows: 1
+      alt: glazed ceramic custom fountain created at botanicals sandy
+      source: /uploads/0z6a9430_h6rz13.jpg
+    - columns: 2
+      rows: 1
+      alt: botanicals sandy retail storefront
+      source: /uploads/0z6a9409-pano_fk2flc.jpg
+    - columns: 2
+      rows: 1
+      alt: botanicals sandy decorated building front
+      source: /uploads/0z6a9403_amkkqi.jpg
 botanicalsInsider:
   heading: More than just pots...
   content: We offer more than just pottery and decor at our retail locations. We

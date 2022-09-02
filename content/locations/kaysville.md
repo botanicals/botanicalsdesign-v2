@@ -86,6 +86,53 @@ additionalContent:
 gallery:
   heading: Gallery
   folder: kaysville
+  images:
+    - columns: 1
+      rows: 1
+      source: /uploads/untitled-9225_rfz9tf.jpg
+      alt: girls smiling while picking homegrown strawberries at botanicals kaysville
+        garden center
+    - columns: 1
+      rows: 1
+      source: /uploads/untitled-9196_kekec1.jpg
+      alt: owner niki showing girls homegrown strawberries at botanicals kaysville
+        garden center
+    - columns: 1
+      rows: 1
+      source: /uploads/kaysville-garden-center.jpg
+      alt: ceramic pottery fountain at botanicals kaysville garden center
+    - columns: 2
+      rows: 1
+      source: /uploads/img_6336_lr8exe.jpg
+      alt: man shopping amongst several varieties of flowers at botanicals kaysville
+        garden center
+    - columns: 3
+      rows: 1
+      source: /uploads/img_6076_vzrn3h.jpg
+      alt: potted flowers for sale on a cloudy day at botanicals kaysville garden
+        center
+    - columns: 2
+      rows: 1
+      source: /uploads/img_6003_zdys7o.jpg
+      alt: botanicals kaysville garden center lot during  event
+    - columns: 1
+      rows: 1
+      source: /uploads/img_5872_lw41di.jpg
+      alt: family smiling standing amongst flowers at botanicals kaysville garden
+        center retail location
+    - columns: 1
+      rows: 1
+      source: /uploads/0z6a9072_f0fvjr.jpg
+      alt: fruit tree branch creating a natural arch at botanicals kaysville garden
+        center
+    - columns: 4
+      rows: 1
+      source: /uploads/0z6a9042-pano_oursko.jpg
+      alt: botanicals kaysville garden center outdoor retail lot
+    - columns: 4
+      rows: 1
+      source: /uploads/0z6a9027-pano_xfekks.jpg
+      alt: botanicals kaysville garden center retail storefront
 botanicalsInsider:
   heading: More than just pots...
   content: We offer more than just pottery and decor at our retail locations. We

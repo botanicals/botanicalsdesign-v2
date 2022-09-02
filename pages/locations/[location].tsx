@@ -1,8 +1,6 @@
 import ErrorPage from 'next/error';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 
-import cloudinary from '../../lib/cloudinary';
-
 import PageLayout from '../../layouts/PageLayout';
 import { Metadata } from '../../layouts/components/Seo';
 import { HeroProps } from '../../layouts/components/Hero';
@@ -124,8 +122,6 @@ export const getStaticProps: GetStaticProps = async context => {
 
   const { name, hero, aboutUs, visitUs, additionalContent, gallery, botanicalsInsider, metadata } = pageData.attributes;
 
-  const results = await cloudinary.search.expression(`folder=${gallery.folder}`).with_field('context').execute();
-
   return {
     props: {
       name,
@@ -135,10 +131,7 @@ export const getStaticProps: GetStaticProps = async context => {
         about: aboutUs,
         visit: visitUs,
         additional: additionalContent || null,
-        gallery: {
-          ...gallery,
-          images: results.resources,
-        },
+        gallery,
         insider: botanicalsInsider,
       },
     },
