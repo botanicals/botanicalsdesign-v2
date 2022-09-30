@@ -54,7 +54,7 @@ const JobsPage: NextPage<JobsPageProps> = ({ name, heading, hero, metadata, loca
 };
 
 export async function getStaticProps() {
-  const page = await import('../../content/pages/jobs.md').catch(error => null);
+  const page = await import('../../cms/content/pages/jobs.md').catch(error => null);
 
   if (!page) return { props: {} };
 
@@ -62,11 +62,11 @@ export async function getStaticProps() {
 
   const slugs = (context => {
     return context.keys().map(key => key.replace(/^.*[\\\/]/, '').slice(0, -3));
-  })(require.context('../../content/jobs', true, /\.md$/));
+  })(require.context('../../cms/content/jobs', true, /\.md$/));
 
   const locations = await Promise.all(
     slugs.map(async slug => {
-      const location = await import(`../../content/jobs/${slug}.md`).catch(error => null);
+      const location = await import(`../../cms/content/jobs/${slug}.md`).catch(error => null);
       return { ...location.attributes, content: location.body };
     })
   );

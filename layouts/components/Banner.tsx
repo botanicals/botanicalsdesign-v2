@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { XIcon } from '@heroicons/react/outline';
 
-import { attributes as global } from '../../content/settings/global.md';
+import { attributes as global } from '../../cms/content/settings/global.md';
 
 const Banner = () => {
   const [showBanner, setShowBanner] = useState(true);
