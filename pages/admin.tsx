@@ -5,6 +5,7 @@ import config from '../cms/config';
 
 import PagePreview from '../cms/previews/PagePreview';
 import PostPreview from '../cms/previews/PostPreview';
+import JobPreview from '../cms/previews/JobPreview';
 
 const CMS = dynamic(
   (async () => {
@@ -13,6 +14,7 @@ const CMS = dynamic(
     cms.registerPreviewStyle('/admin/main.css');
     cms.registerPreviewTemplate('pages', PagePreview);
     cms.registerPreviewTemplate('posts', PostPreview);
+    cms.registerPreviewTemplate('jobs', JobPreview);
     cms.init({ config } as InitOptions);
   }) as any,
   { ssr: false, loading: () => <p>Loading...</p> }

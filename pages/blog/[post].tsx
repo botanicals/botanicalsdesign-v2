@@ -4,18 +4,18 @@ import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import PageLayout from '../../layouts/PageLayout';
 import { Metadata } from '../../layouts/components/Seo';
 import { HeroProps } from '../../layouts/components/Hero';
-import PostPage from '../../layouts/pages/PostPage';
+import PostPageLayout from '../../layouts/pages/PostPage';
 
 import { Post } from './index';
 
-interface BlogPostPageProps {
+interface PostPageProps {
   name: string;
   hero: HeroProps;
   metadata: Metadata;
   post: Post;
 }
 
-const BlogPostPage: NextPage<BlogPostPageProps> = ({ name, hero, metadata, post }) => {
+const PostPage: NextPage<PostPageProps> = ({ name, hero, metadata, post }) => {
   // Check if the required data was provided
   if (!post) {
     return <ErrorPage statusCode={500} />;
@@ -23,7 +23,7 @@ const BlogPostPage: NextPage<BlogPostPageProps> = ({ name, hero, metadata, post 
 
   return (
     <PageLayout heading={name} hero={hero} seo={metadata}>
-      <PostPage post={post} />
+      <PostPageLayout post={post} />
     </PageLayout>
   );
 };
@@ -72,4 +72,4 @@ export const getStaticProps: GetStaticProps = async context => {
   };
 };
 
-export default BlogPostPage;
+export default PostPage;
