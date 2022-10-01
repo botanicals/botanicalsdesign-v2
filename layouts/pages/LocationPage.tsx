@@ -6,9 +6,10 @@ import MarkdownText from '../../components/utility/markdown-text';
 
 interface LocationPageProps {
   sections: any;
+  preview?: boolean;
 }
 
-const LocationPage: React.VFC<LocationPageProps> = ({ sections: { about, visit, additional, gallery, insider } }) => {
+const LocationPage: React.VFC<LocationPageProps> = ({ sections: { about, visit, additional, gallery, insider }, preview }) => {
   return (
     <>
       <Section heading={about.heading}>
@@ -70,9 +71,7 @@ const LocationPage: React.VFC<LocationPageProps> = ({ sections: { about, visit, 
             <MarkdownText>{insider.content}</MarkdownText>
             <h3 className="heading heading__h3 heading__h3--green heading__quote">{insider.featuredText}</h3>
           </Column>
-          <Column width={50}>
-            <SubscribeForm />
-          </Column>
+          <Column width={50}>{preview ? <p>Form does not render in preview mode</p> : <SubscribeForm />}</Column>
         </Row>
       </Section>
     </>

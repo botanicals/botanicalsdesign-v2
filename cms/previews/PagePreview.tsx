@@ -13,7 +13,7 @@ const PagePreview: React.FC<PreviewTemplateComponentProps> = ({ entry }) => {
 
   return (
     <PageLayout heading={heading} hero={hero} seo={metadata}>
-      <Sections sections={sections || []} />
+      <Sections sections={sections || []} preview={true} />
     </PageLayout>
   );
 };

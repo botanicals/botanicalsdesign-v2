@@ -23,6 +23,7 @@ const LocationPreview: React.FC<PreviewTemplateComponentProps> = ({ entry }) => 
           gallery,
           insider: botanicalsInsider,
         }}
+        preview={true}
       />
     </PageLayout>
   );

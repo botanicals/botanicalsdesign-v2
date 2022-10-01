@@ -28,7 +28,7 @@ const sectionComponents: { [key: string]: React.FC<any> } = {
 };
 
 // Display a section individually
-const Section = ({ sectionData }: { sectionData: any }) => {
+const Section = ({ sectionData, preview }: { sectionData: any; preview?: boolean }) => {
   // Prepare the component
   const SectionComponent = sectionComponents[sectionData.type];
 
@@ -38,15 +38,15 @@ const Section = ({ sectionData }: { sectionData: any }) => {
   }
 
   // Display the section
-  return <SectionComponent data={sectionData} />;
+  return <SectionComponent data={sectionData} preview={preview} />;
 };
 
 // Display the list of sections
-const Sections = ({ sections }: { sections: any[] }) => {
+const Sections = ({ sections, preview }: { sections: any[]; preview?: boolean }) => {
   return (
     <Fragment>
       {sections.map((section, index) => {
-        return <Section key={`${section.type}-${index}`} sectionData={section} />;
+        return <Section key={`${section.type}-${index}`} sectionData={section} preview={preview} />;
       })}
     </Fragment>
   );
