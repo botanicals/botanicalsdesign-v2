@@ -2,12 +2,11 @@ import ErrorPage from 'next/error';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 
 import PageLayout from '../../layouts/PageLayout';
+import PortfolioPageLayout from '../../layouts/pages/PortfolioPage';
 import { Metadata } from '../../layouts/components/Seo';
 import { HeroProps } from '../../layouts/components/Hero';
 
-import { Section, Row, Column } from '../../components/layouts';
-
-type PortfolioSection = {
+export type PortfolioSection = {
   heading: string;
   images: {
     source: string;
@@ -32,39 +31,7 @@ const PortfolioPage: NextPage<PortfolioPageProps> = ({ name, hero, metadata, com
 
   return (
     <PageLayout hero={hero} seo={metadata}>
-      <Section heading="Commercial">
-        {commercial.map(({ images, heading }, index) => (
-          <Row key={index}>
-            <Column width={100}>
-              <h3 className="heading heading__h3 heading__h3--red">{heading}</h3>
-              <div className="space-y-8">
-                {images.map((image, index) => (
-                  <figure key={index}>
-                    <img src={image.source} alt={image.alt || `${name} portfolio - Commercial - ${heading} - ${index}`} />
-                  </figure>
-                ))}
-              </div>
-            </Column>
-          </Row>
-        ))}
-      </Section>
-
-      <Section heading="Residential">
-        {residential.map(({ images, heading }, index) => (
-          <Row key={index}>
-            <Column width={100}>
-              <h3 className="heading heading__h3 heading__h3--red">{heading}</h3>
-              <div className="space-y-8">
-                {images.map((image, index) => (
-                  <figure key={index}>
-                    <img src={image.source} alt={image.alt || `${name} portfolio - Residential - ${heading} - ${index}`} />
-                  </figure>
-                ))}
-              </div>
-            </Column>
-          </Row>
-        ))}
-      </Section>
+      <PortfolioPageLayout name={name} commercial={commercial} residential={residential} />
     </PageLayout>
   );
 };
@@ -72,7 +39,7 @@ const PortfolioPage: NextPage<PortfolioPageProps> = ({ name, hero, metadata, com
 export const getStaticPaths: GetStaticPaths = async () => {
   const slugs = (context => {
     return context.keys().map(key => key.replace(/^.*[\\\/]/, '').slice(0, -3));
-  })(require.context('../../content/portfolio', true, /\.md$/));
+  })(require.context('../../cms/content/portfolio', true, /\.md$/));
 
   const paths = slugs.map(slug => ({
     params: {
@@ -89,7 +56,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async context => {
   const { portfolio } = context.params!;
 
-  const pageData = await import(`../../content/portfolio/${portfolio}.md`).catch(error => null);
+  const pageData = await import(`../../cms/content/portfolio/${portfolio}.md`).catch(error => null);
 
   if (!pageData) {
     return { props: {} };

@@ -10,9 +10,10 @@ interface BotanicalsInsiderProps {
     content: string;
     featuredText: string;
   };
+  preview: boolean;
 }
 
-const BotanicalsInsider: React.FC<BotanicalsInsiderProps> = ({ data }) => {
+const BotanicalsInsider: React.FC<BotanicalsInsiderProps> = ({ data, preview }) => {
   return (
     <Section heading={data.heading}>
       <Row>
@@ -20,9 +21,7 @@ const BotanicalsInsider: React.FC<BotanicalsInsiderProps> = ({ data }) => {
           <MarkdownText>{data.content}</MarkdownText>
           <h3 className="heading heading__h3 heading__h3--green heading__quote">{data.featuredText}</h3>
         </Column>
-        <Column width={50}>
-          <SubscribeForm />
-        </Column>
+        <Column width={50}>{preview ? <p>Form does not render in preview mode</p> : <SubscribeForm />}</Column>
       </Row>
     </Section>
   );

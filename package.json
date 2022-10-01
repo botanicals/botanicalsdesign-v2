@@ -6,9 +6,12 @@
     "cms": "npx netlify-cms-proxy-server",
     "dev:cms": "concurrently \"npm run dev\" \"npm run cms\"",
     "noIndex": "next build && echo 'User-agent: *\nDisallow: /' > public/robots.txt",
+    "build:admin-css": "npx tailwindcss build styles/globals.css -o public/admin/styles.css",
+    "build:admin-scss": "sass styles/main.scss public/admin/main.css",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "npm run build:admin-css && npm run build:admin-scss && npm run build && next export"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.3",

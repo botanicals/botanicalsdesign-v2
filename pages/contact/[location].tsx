@@ -49,7 +49,7 @@ const RetailContact: NextPage<RetailContactProps> = ({ name, hero, metadata, con
 export const getStaticPaths: GetStaticPaths = async () => {
   const slugs = (context => {
     return context.keys().map(key => key.replace(/^.*[\\\/]/, '').slice(0, -3));
-  })(require.context('../../content/locations', true, /\.md$/));
+  })(require.context('../../cms/content/locations', true, /\.md$/));
 
   const paths = slugs.map(slug => ({
     params: {
@@ -66,7 +66,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async context => {
   const { location } = context.params!;
 
-  const pageData = await import(`../../content/locations/${location}.md`).catch(error => null);
+  const pageData = await import(`../../cms/content/locations/${location}.md`).catch(error => null);
 
   if (!pageData) {
     return { props: {} };

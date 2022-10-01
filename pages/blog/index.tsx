@@ -48,7 +48,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ name, heading, hero, metadata, post
 };
 
 export async function getStaticProps() {
-  const page = await import('../../content/pages/blog.md').catch(error => null);
+  const page = await import('../../cms/content/pages/blog.md').catch(error => null);
 
   if (!page) return { props: {} };
 
@@ -56,11 +56,11 @@ export async function getStaticProps() {
 
   const slugs = (context => {
     return context.keys().map(key => key.replace(/^.*[\\\/]/, '').slice(0, -3));
-  })(require.context('../../content/posts', true, /\.md$/));
+  })(require.context('../../cms/content/posts', true, /\.md$/));
 
   const posts = await Promise.all(
     slugs.map(async slug => {
-      const post = await import(`../../content/posts/${slug}.md`).catch(error => null);
+      const post = await import(`../../cms/content/posts/${slug}.md`).catch(error => null);
       return { ...post.attributes, content: post.body };
     })
   );

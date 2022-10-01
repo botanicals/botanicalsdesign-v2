@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { attributes as navigation } from '../../content/settings/navigation.md';
+import { attributes as navigation } from '../../cms/content/settings/navigation.md';
 
 import { Section, Column, Row } from '../../components/layouts';
 import { Fragment } from 'react';

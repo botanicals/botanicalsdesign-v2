@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import Navigation from './Navigation';
 
-import { attributes as navigation } from '../../content/settings/navigation.md';
+import { attributes as navigation } from '../../cms/content/settings/navigation.md';
 import { Navigation as INavigation } from '../../utils/md-types';
 
 const Header = () => {

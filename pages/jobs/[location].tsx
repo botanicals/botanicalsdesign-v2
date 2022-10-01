@@ -2,15 +2,11 @@ import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import ErrorPage from 'next/error';
 
 import PageLayout from '../../layouts/PageLayout';
+import JobPageLayout from '../../layouts/pages/JobPage';
 import { Metadata } from '../../layouts/components/Seo';
 import { HeroProps } from '../../layouts/components/Hero';
 
-import Button from '../../components/elements/button';
-import { Section, Row, Column } from '../../components/layouts';
-import MarkdownText from '../../components/utility/markdown-text';
-import Link from 'next/link';
-
-interface Listing {
+export interface Listing {
   title: string;
   description: string;
 }
@@ -32,38 +28,7 @@ const JobsPage: NextPage<JobsPageProps> = ({ name, heading, hero, metadata, over
 
   return (
     <PageLayout heading={heading} hero={hero} seo={metadata}>
-      <Section>
-        <Row>
-          <Column width={100}>
-            <p>
-              <Link href="/">
-                <a>Botanicals Design</a>
-              </Link>{' '}
-              &rsaquo;{' '}
-              <Link href="/jobs">
-                <a>Jop Openings</a>
-              </Link>{' '}
-              &rsaquo; {name}
-            </p>
-          </Column>
-        </Row>
-      </Section>
-      <Section key={name} heading={`Botanicals ${name} Jobs`}>
-        <Row>
-          <Column width={100}>
-            <MarkdownText>{overview}</MarkdownText>
-          </Column>
-        </Row>
-      </Section>
-      {positions.map(position => (
-        <Section key={position.title} heading={position.title}>
-          <Row>
-            <Column width={100}>
-              <MarkdownText>{position.description}</MarkdownText>
-            </Column>
-          </Row>
-        </Section>
-      ))}
+      <JobPageLayout name={name} overview={overview} positions={positions} />
     </PageLayout>
   );
 };
@@ -71,7 +36,7 @@ const JobsPage: NextPage<JobsPageProps> = ({ name, heading, hero, metadata, over
 export const getStaticPaths: GetStaticPaths = async () => {
   const slugs = (context => {
     return context.keys().map(key => key.replace(/^.*[\\\/]/, '').slice(0, -3));
-  })(require.context('../../content/jobs', true, /\.md$/));
+  })(require.context('../../cms/content/jobs', true, /\.md$/));
 
   const paths = slugs.map(slug => ({
     params: {
@@ -86,7 +51,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async context => {
-  const page = await import('../../content/pages/jobs.md').catch(error => null);
+  const page = await import('../../cms/content/pages/jobs.md').catch(error => null);
 
   if (!page) return { props: {} };
 
@@ -94,11 +59,11 @@ export const getStaticProps: GetStaticProps = async context => {
 
   const slugs = (context => {
     return context.keys().map(key => key.replace(/^.*[\\\/]/, '').slice(0, -3));
-  })(require.context('../../content/jobs', true, /\.md$/));
+  })(require.context('../../cms/content/jobs', true, /\.md$/));
 
   const locations = await Promise.all(
     slugs.map(async slug => {
-      const location = await import(`../../content/jobs/${slug}.md`).catch(error => null);
+      const location = await import(`../../cms/content/jobs/${slug}.md`).catch(error => null);
       return { ...location.attributes };
     })
   );

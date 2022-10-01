@@ -44,7 +44,7 @@ const Page: NextPage<PageProps> = ({ name, heading, hero, metadata, sections }) 
 export const getStaticPaths: GetStaticPaths = async () => {
   const {
     attributes: { paths: siteMap },
-  } = await import('../content/settings/paths.md');
+  } = await import('../cms/content/settings/paths.md');
 
   let paths: PagePaths[] = [];
 
@@ -88,7 +88,7 @@ export const getStaticProps: GetStaticProps = async context => {
 
   const [slug] = page.slice(-1);
 
-  const pageData = await import(`../content/pages/${slug}.md`).catch(error => null);
+  const pageData = await import(`../cms/content/pages/${slug}.md`).catch(error => null);
 
   const { name, heading, hero, parent, metadata, sections = [] } = pageData.attributes;
 
