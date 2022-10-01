@@ -56,25 +56,34 @@ visitUs:
     We ask for your patience in this time of transition. Tri City Nursery is in the process of building a new office space nearby. We will update you as soon as their move is permanent.
 
 
-    ### Summer hours
+    ### Guaranteed Hours (October 2022)
 
 
-    ##### March – October
+    F﻿riday - Saturday 9:00AM - 5:00PM
 
 
-    Monday - Thursday 9:00AM – 5:00PM
+    [W﻿hy have our hours changed?](blog/a-special-message-from-our-ceo)
 
 
-    Friday - Saturday 8:00AM - 6:00PM
+    ### ~~Summer hours~~
 
 
-    ### Winter hours
+    ##### ~~March – October~~
 
 
-    ##### November – February
+    ~~Monday - Thursday 9:00AM – 5:00PM~~
 
 
-    Monday-Saturday 9:00AM – 4:00PM
+    ~~Friday - Saturday 8:00AM - 6:00PM~~
+
+
+    ### ~~Winter hours~~
+
+
+    ##### ~~November – February~~
+
+
+    ~~Monday-Saturday 9:00AM – 4:00PM~~
   map:
     source: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.776193650648!2d-111.95259928428062!3d41.030152126026806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752ff4aeab7a34d%3A0x8e6b53cc30854ea8!2sBotanicals!5e0!3m2!1sen!2sus!4v1616472731580!5m2!1sen!2sus
     title: Botanicals Kaysville Garden Center Map
