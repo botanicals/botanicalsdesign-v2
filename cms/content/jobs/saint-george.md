@@ -38,7 +38,11 @@ positions:
       * Work on assigned tasks through OneNote
 
 
+
+
       **Hours:** This position is currently part-time
+
+
 
 
       **Qualifications**
