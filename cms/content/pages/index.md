@@ -10,7 +10,7 @@ hero:
     heading: It's time to winterize your fountain!
     button:
       href: /winterizefountains
-      text: Winterize You Fountain
+      text: Winterize Your Fountain
       external: false
     text: For our Northern Utah customers, check out our tutorial.
 heading: Who we are
