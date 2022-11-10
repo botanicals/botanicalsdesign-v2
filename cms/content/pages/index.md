@@ -2,16 +2,17 @@
 name: Home
 hero:
   heading: Welcome to Botanicals
-  subheading: Kaysville | Sandy | St. George
+  subheading: Sandy | St. George
   image:
     source: /uploads/home-large-2x.jpg
     alt: close up image of a glazed ceramic pot full of vibrant succulents
   cta:
-    heading: It's time for spring planting!
+    heading: It's time to winterize your fountain!
     button:
-      href: /locations/kaysville
-      text: Take me to Kaysville
-    text: Visit our Kaysville location for your perennials, shrubs, and trees.
+      href: /winterizefountains
+      text: Winterize You Fountain
+      external: true
+    text: For our Northern Utah customers, check out our tutorial.
 heading: Who we are
 sections:
   - type: columnContent
@@ -34,10 +35,14 @@ sections:
           We love everything plantscapes. We grew up at Sandia Farms, a greenhouse owned by our father in St George, Utah. There we developed a love for plants and helping others receive the positive effects of having their space plantscaped.
 
 
-          In the last few years, we have also expanded our business to own three retail locations where we sell ceramic pottery, metal art, yard decor, and more. We have one location in [St George, Utah](/locations/saint-george/),another further north in [Sandy, Utah](/locations/sandy/), and another even further north in [Kaysville, Utah](/locations/kaysville/).
+          In the last few years, we have also expanded our business to own three retail locations where we sell ceramic pottery, metal art, yard decor, and more. 
+
+
+          Visit our retail locations in [St George, Utah](/locations/saint-george/), and [Sandy, Utah.](/locations/sandy/)
       - type: button
         text: Request a free consultation today
         href: /request-consultation
+        external: true
     rightColumn:
       - type: image
         source: /uploads/botanicals-owners-nicole-braden-hancock-large-2x.jpg
@@ -54,6 +59,7 @@ sections:
     button:
       text: Visit our portfolio
       href: /portfolio
+      external: true
     images:
       - source: /uploads/living-wall-plantscape-design-waiting-area-3-large-2x.jpg
         caption: Findlay Subaru 'Wall of Life'
@@ -87,6 +93,7 @@ sections:
       - type: button
         text: Learn how we work with our clientele
         href: /prospective-clients
+        external: true
   - type: columnContent
     layout: 1/2 | 1/2
     rightColumn:
@@ -106,6 +113,7 @@ sections:
       - type: button
         text: Learn more about our maintenance service
         href: /services/maintenance
+        external: true
   - type: columnContent
     layout: 1/2 | 1/2
     heading: We love creating plantscapes
@@ -128,6 +136,7 @@ sections:
       - type: button
         text: Visit our blog
         href: /blog
+        external: true
   - type: visitOurLocations
     content: >-
       ### Visit our retail locations
@@ -149,12 +158,12 @@ sections:
     featuredText: Become a Botanicals Design Insider to stay updated...
     heading: More than just pots...
 metadata:
-  shareImage: ''
+  shareImage: ""
   title: Botanicals Design
   description: BOTANICALS offers custom plantscape design and installations, plant
     maintenance services, and three retail locations selling pottery,
     containers, and yard decor.
-  twitterUsername: ''
+  twitterUsername: ""
   twitterCardType: summary
   slug: /
   titleOverwrite: true
