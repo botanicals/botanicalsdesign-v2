@@ -11,7 +11,7 @@ hero:
     button:
       href: /winterizefountains
       text: Winterize You Fountain
-      external: true
+      external: false
     text: For our Northern Utah customers, check out our tutorial.
 heading: Who we are
 sections:
@@ -42,7 +42,7 @@ sections:
       - type: button
         text: Request a free consultation today
         href: /request-consultation
-        external: true
+        external: false
     rightColumn:
       - type: image
         source: /uploads/botanicals-owners-nicole-braden-hancock-large-2x.jpg
@@ -59,7 +59,7 @@ sections:
     button:
       text: Visit our portfolio
       href: /portfolio
-      external: true
+      external: false
     images:
       - source: /uploads/living-wall-plantscape-design-waiting-area-3-large-2x.jpg
         caption: Findlay Subaru 'Wall of Life'
@@ -93,7 +93,7 @@ sections:
       - type: button
         text: Learn how we work with our clientele
         href: /prospective-clients
-        external: true
+        external: false
   - type: columnContent
     layout: 1/2 | 1/2
     rightColumn:
@@ -113,7 +113,7 @@ sections:
       - type: button
         text: Learn more about our maintenance service
         href: /services/maintenance
-        external: true
+        external: false
   - type: columnContent
     layout: 1/2 | 1/2
     heading: We love creating plantscapes
@@ -136,7 +136,7 @@ sections:
       - type: button
         text: Visit our blog
         href: /blog
-        external: true
+        external: false
   - type: visitOurLocations
     content: >-
       ### Visit our retail locations
