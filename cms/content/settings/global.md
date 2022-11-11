@@ -7,11 +7,11 @@ defaultMetadata:
     containers, and yard decor.
   slug: /
 siteBanner:
-  shortText: Our Kaysville location is closing...
-  longText: Our Kaysville location is closing... 40% off everything while supplies
-    last....
+  shortText: ""
+  longText: ""
   link:
-    href: /blog/a-special-message-from-our-ceo
-    text: Learn more
+    href: ""
+    text: ""
     external: false
+  showBanner: false
 ---

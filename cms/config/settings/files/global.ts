@@ -13,6 +13,7 @@ const global = {
       widget: 'object',
       required: false,
       fields: [
+        { label: 'Show Banner', name: 'showBanner', widget: 'boolean' },
         { label: 'Short Text', name: 'shortText', widget: 'string', required: false },
         { label: 'Long Text', name: 'longText', widget: 'string', required: false },
         {
