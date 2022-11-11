@@ -5,7 +5,7 @@ const button = {
   fields: [
     { label: 'Text', name: 'text', widget: 'string' },
     { label: 'Href', name: 'href', widget: 'string' },
-    { label: 'External', name: 'external', widget: 'boolean' },
+    { label: 'External', name: 'external', widget: 'boolean', required: false },
   ],
 };
 
