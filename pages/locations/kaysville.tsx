@@ -42,7 +42,6 @@ export const getStaticProps: GetStaticProps = async () => {
       name: 'Botanicals Kaysville',
       hero: {
         heading: 'Botanicals Kaysville',
-        subheading: 'Our newest destination for all your indoor and outdoor gardening needs',
         image: {
           source: '/uploads/kaysville-large-2x.jpg',
           alt: 'an orange-gloved hand holding a container planted with red and yellow flowers',
@@ -50,8 +49,7 @@ export const getStaticProps: GetStaticProps = async () => {
       },
       metadata: {
         title: 'Botanicals Garden Center in Kaysville, UT',
-        description:
-          'Botanicals Kaysville is pleased to focus on serving the needs of home owners by providing top quality trees, shrubs, vegetables, herbs, flowers, and houseplants. We also offer a full range of soils, fertilizers, garden tools, and pest and weed management. We look forward to adding classes and community outreach programs in the near future.',
+        description: 'This location is closed.  If you need pottery or design services, please contact us at 801.567.1255 or come and see up at our location in Sandy.',
       },
     },
   };
