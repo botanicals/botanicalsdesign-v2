@@ -2,92 +2,6 @@
 name: Saint George
 overview: Please send application material to RobynG@BotanicalsDesign.com.
 positions:
-  - title: Delivery Driver / General Laborer - Bluff Street
-    slug: delivery-driver-general-laborer
-    description: >-
-      #### Responsibilities:
-
-
-      * Deliver pots, fountains to homes and businesses on designated days
-
-      * Help with fountain maintenance
-
-      * Assist with outdoor plantings and plant replacements
-
-      * Facilities maintenance at our shop and Sandia Nursery
-
-      * Occasionally operate tractors, forklifts (training available if needed)
-
-
-      #### Qualifications:
-
-
-      * Valid drivers license
-
-      * Available 3-5 days per week, 6-8 hours per shift (Full time starting in Spring)
-
-      * Must be able to lift 50lbs or more
-
-      * Must be 18+
-
-
-      #### Compensation:
-
-
-      * $13.00-$15.00/hr DOE
-
-
-      #### To Apply:
-
-
-      Submit Resume, cover letter, and at least 2 references.
-  - title: Outdoor Planting / Maintenance - Bluff Street
-    slug: outdoor-planting-maintenance
-    description: >-
-      #### Responsibilities:
-
-
-      * Assist in outdoor plantings for businesses and homes
-
-      * Assist in clean up during outdoor plantings
-
-      * Indoor/Outdoor plant maintenance 
-
-      * Maintain a clean work area
-
-      * Drive box truck to and from job locations
-
-      * Assist with watering schedule at Sandia Nursery
-
-
-      #### Qualifications:
-
-
-      * Valid driver’s license
-
-      * Available 3-5 days per week
-
-      * Planting knowledge and experience or the ability and desire to learn proper technique 
-
-      * Basic plant knowledge preferred 
-
-      * Self-manageable
-
-      * Must be able to work in outdoor conditions in all weather
-
-      * Must be able to lift 50+ pounds
-
-
-      #### Compensation:
-
-
-      * $13.00-15.00/hr DOE
-
-
-      #### To Apply: 
-
-
-      Submit Resume, cover letter, and at least 2 references.
   - title: Pottery Shop Retail Customer Service and Sales - Bluff Street
     slug: st-george-pottery-shop-retail
     description: >-
@@ -124,6 +38,13 @@ positions:
       * Work on assigned tasks through OneNote
 
 
+
+
+      **Hours:** This position is currently part-time
+
+
+
+
       **Qualifications**
 
 
@@ -137,8 +58,6 @@ positions:
 
         **Compensation**
       * $13.00-$15.00/hr DOE
-
-
 
 
       Please send your resume and a cover letter or description of why you are interested in this position.
