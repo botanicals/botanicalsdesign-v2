@@ -49,7 +49,7 @@ additionalContent:
   button:
     external: true
     text: Directions
-    href: directions.com
+    href: https://www.google.com/maps/dir//Botanicals+8610+State+St+Sandy,+UT+84070/@40.5948094,-111.8911293,10z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8752886894cedb91:0xab821b9c26ee88df
 gallery:
   heading: Gallery
   folder: sandy
