@@ -29,9 +29,6 @@ headerNavigation:
   - name: Locations
     path: locations
     children:
-      - name: Kaysville, UT
-        href: kaysville
-        nested: true
       - name: Sandy, UT
         href: sandy
         nested: true
@@ -45,22 +42,6 @@ headerNavigation:
 footerLocations:
   heading: Visit us at our stores
   locations:
-    - name: Botanicals Kaysville
-      href: /locations/kaysville
-      address: |-
-        395 South Deseret Drive
-        Kaysville, UT 84037
-      phone:
-        text: 801.589.2055
-        href: tel:8015892055
-      email:
-        text: Send a message
-        href: /contact/kaysville
-      socials:
-        - type: facebook
-          href: https://www.facebook.com/botanicalskaysville/
-        - type: instagram
-          href: https://www.instagram.com/botanicalsdesign/
     - name: Botanicals Sandy
       href: /locations/sandy
       address: |-
