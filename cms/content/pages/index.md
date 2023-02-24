@@ -35,7 +35,7 @@ sections:
           We love everything plantscapes. We grew up at Sandia Farms, a greenhouse owned by our father in St George, Utah. There we developed a love for plants and helping others receive the positive effects of having their space plantscaped.
 
 
-          In the last few years, we have also expanded our business to own three retail locations where we sell ceramic pottery, metal art, yard decor, and more. 
+          In the last few years, we have also expanded our business to own two retail locations where we sell ceramic pottery, metal art, yard decor, and more. 
 
 
           Visit our retail locations in [St George, Utah](/locations/saint-george/), and [Sandy, Utah.](/locations/sandy/)
@@ -77,7 +77,7 @@ sections:
       - type: image
         source: /uploads/custom-container-plantscape-design-genomics-large-2x.jpg
         alt: s-shaped planter full of vibrant, green, subtropical plants
-        caption: A custom s-shaped planter we designed for ICH Genomics
+        caption: A custom s-shaped planter we designed for IHC Genomics
     leftColumn:
       - type: markdown
         content: >-
@@ -142,7 +142,7 @@ sections:
       ### Visit our retail locations
 
 
-      We are always looking to expand our ability to help people enrich their lives. This is why we have [three retail locations](/locations). Visit us at these locations to find beautiful ceramic pottery, metal art, yard decor, plants, and more.
+      We are always looking to expand our ability to help people enrich their lives. This is why we have [two retail locations](/locations). Visit us at these locations to find beautiful ceramic pottery, metal art, yard decor, plants, and more.
 
 
       If you are looking to liven up your home or yard then retail locations will provide you with the tool necessary to do that. Our staff are always happy to answer any questions to help with your designing. We have a lot to offer, and provide a delivery service for those who want it.
@@ -161,8 +161,8 @@ metadata:
   shareImage: ""
   title: Botanicals Design
   description: BOTANICALS offers custom plantscape design and installations, plant
-    maintenance services, and three retail locations selling pottery,
-    containers, and yard decor.
+    maintenance services, and two retail locations selling pottery, containers,
+    and yard decor.
   twitterUsername: ""
   twitterCardType: summary
   slug: /
