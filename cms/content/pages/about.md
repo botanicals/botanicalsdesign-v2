@@ -55,7 +55,7 @@ sections:
           We love everything plantscapes. We grew up at Sandia Farms, a greenhouse owned and operated by our family in St George, Utah. There we developed a love for plants and helping other receive the positive effects of having their space plantscaped.
 
 
-          In the last few years, we have also expanded our business to own three retail locations where we sell ceramic pottery, metal art, yard decor, and more. We have one [location in St George, Utah](/locations/saint-george), [another further north in Sandy, Utah](/locations/sandy), and [another even further north in Kaysville, Utah.](/locations/kaysville)
+          In the last few years, we have also expanded our business to own two retail locations where we sell ceramic pottery, metal art, yard decor, and more. We have one [location in St George, Utah](/locations/saint-george) and [another further north in Sandy, Utah](/locations/sandy).
       - type: button
         text: Request a free consultation today
         href: /request-consultation
@@ -75,7 +75,7 @@ sections:
       ### Visit our retail locations
 
 
-      We are always looking to expand our ability to help people enrich their lives. This is why we have [three retail locations](/locations). Visit us at these locations to find beautiful ceramic pottery, metal art, yard decor, plants, and more.
+      We are always looking to expand our ability to help people enrich their lives. This is why we have [two retail locations](/locations). Visit us at these locations to find beautiful ceramic pottery, metal art, yard decor, plants, and more.
 
 
       If you are looking to liven up your home or yard then retail locations will provide you with the tool necessary to do that. Our staff are always happy to answer any questions to help with your designing. We have a lot to offer, and provide a delivery service for those who want it.

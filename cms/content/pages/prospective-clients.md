@@ -108,7 +108,7 @@ sections:
           ### Landscapers
 
 
-          Botanicals loves landscapers! With the addition of [our retail stores](/locations) in [Sandy](/locations/sandy), [St George](/locations/saint-george), and [Kaysville](/locations/kaysville), Utah we have been able to better serve landscaping businesses.
+          Botanicals loves landscapers! With the addition of [our retail stores](/locations) in [Sandy](/locations/sandy) and [St George](/locations/saint-george), Utah we have been able to better serve landscaping businesses.
 
 
           We are currently working to build a Landscapers Program to implement at our stores. Please visit or contact our store closest to you to learn more information, and be sure to check back regularly for updates on the Botanicals Landscaper Program.

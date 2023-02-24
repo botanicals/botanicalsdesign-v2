@@ -20,12 +20,6 @@ sections:
       external: true
   - type: basicContent
     content: >-
-      ### Kaysville, UT
-
-
-      If you have any questions or would like to inquire about jobs [please contact Kaysville here.](/contact/kaysville)
-
-
       ### Sandy, UT
 
 

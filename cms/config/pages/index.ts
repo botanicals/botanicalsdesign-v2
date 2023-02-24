@@ -51,7 +51,17 @@ const pages = {
           fields: [
             { label: 'Heading', name: 'heading', widget: 'string', required: false },
             { label: 'Text', name: 'text', widget: 'string', required: false },
-            { ...button, required: false },
+            {
+              label: 'Button',
+              name: 'button',
+              widget: 'object',
+              required: false,
+              fields: [
+                { label: 'Text', name: 'text', widget: 'string', required: false },
+                { label: 'Href', name: 'href', widget: 'string', required: false },
+                { label: 'External', name: 'external', widget: 'boolean', required: false },
+              ],
+            },
           ],
           required: false,
         },

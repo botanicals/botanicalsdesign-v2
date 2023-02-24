@@ -27,13 +27,6 @@ const VisitOurLocations: React.FC<VisitOurLocationsProps> = ({ data }) => {
       <Row>
         <Column width={33}>
           <figure>
-            <img src={data.images.kaysville} alt="A collection of pottery at Botanicals Kaysville retail location" />
-          </figure>
-          <Button href="/locations/kaysville">Botanicals Kaysville</Button>
-        </Column>
-
-        <Column width={33}>
-          <figure>
             <img src={data.images.sandy} alt="A collection of pottery at Botanicals Sandy retail location" />
           </figure>
           <Button href="/locations/sandy">Botanicals Sandy</Button>
@@ -44,6 +37,8 @@ const VisitOurLocations: React.FC<VisitOurLocationsProps> = ({ data }) => {
           </figure>
           <Button href="/locations/saint-george">Botanicals St George</Button>
         </Column>
+
+        <Column width={33}></Column>
       </Row>
     </Section>
   );

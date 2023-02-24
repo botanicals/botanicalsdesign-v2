@@ -21,7 +21,7 @@ const Gallery: React.VFC<GalleryProps> = ({ images }) => {
             gridRow: `span ${image.rows ? `${image.rows}` : '1'}`,
           }}
         >
-          <img className="image-gallery-item__image" src={image.source} alt={`${image.alt || `kaysville gallery image ${index + 1}`}`}></img>
+          <img className="image-gallery-item__image" src={image.source} alt={`${image.alt || `gallery image ${index + 1}`}`}></img>
         </figure>
       ))}
     </div>
