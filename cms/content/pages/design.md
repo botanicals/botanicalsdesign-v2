@@ -25,7 +25,7 @@ sections:
         href: /request-consultation
     rightColumn:
       - type: image
-        source: /uploads/botanicals-free-design-consultation-large-2x.jpg
+        source: /uploads/botanicals-free-design-consultation.jpeg
         alt: nicole hancock talking to a prospective client
   - type: designProcess
     heading: The Botanicals design process
