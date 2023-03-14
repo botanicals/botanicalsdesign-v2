@@ -1,6 +1,6 @@
 ---
 name: Sandy
-overview: Please send application material to DallinW@BotanicalsDesign.com
+overview: Please send application material to TannonD@BotanicalsDesign.com
 positions:
   - title: Customer Service/Sales
     description: >-
