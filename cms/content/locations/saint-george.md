@@ -39,12 +39,16 @@ visitUs:
 
     ### Winter hours
 
-    ##### November 1st – March 7th
+    ##### December 18, 2023 - Feb 19, 2024
 
-    Monday-Saturday 9:30AM – 5:00PM
+    Thursday-Saturday 9:30AM – 5:00PM
   map:
     source: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.4472715424126!2d-113.59922778474316!3d37.1182726798842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca5a136a4a7863%3A0x14c048224067b8a8!2sBotanicals!5e0!3m2!1sen!2sus!4v1584996374805!5m2!1sen!2sus
     title: Botanicals Saint George Retail Location Map
+additionalContent:
+  button:
+    text: "Botanicals St. George "
+    href: https://botanicalsdesign.com/locations/saint-george
 gallery:
   heading: Gallery
   folder: st-george
