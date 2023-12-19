@@ -46,7 +46,7 @@ const LocationPage: React.VFC<LocationPageProps> = ({ sections: { about, visit, 
         <Section heading={additional.heading}>
           <Row>
             <Column width={100}>
-              <MarkdownText>{additional.content}</MarkdownText>
+              {additional.content && <MarkdownText>{additional.content}</MarkdownText>}
               {additional.button && additional.button.text && additional.button.href && (
                 <Button href={additional.button.href} external={additional.button.external}>
                   {additional.button.text}

@@ -74,7 +74,17 @@ const locations = {
       fields: [
         { label: 'Heading', name: 'heading', widget: 'string', required: false },
         { label: 'Content', name: 'content', widget: 'markdown', required: false },
-        { ...button, required: false },
+        {
+          label: 'Button',
+          name: 'button',
+          widget: 'object',
+          fields: [
+            { label: 'Text', name: 'text', widget: 'string', required: false },
+            { label: 'Href', name: 'href', widget: 'string', required: false },
+            { label: 'External', name: 'external', widget: 'boolean', required: false },
+          ],
+          required: false,
+        },
       ],
     },
     {

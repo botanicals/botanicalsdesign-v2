@@ -47,8 +47,8 @@ visitUs:
     title: Botanicals Saint George Retail Location Map
 additionalContent:
   button:
-    text: "Botanicals St. George "
-    href: https://botanicalsdesign.com/locations/saint-george
+    text: ""
+    href: ""
 gallery:
   heading: Gallery
   folder: st-george
