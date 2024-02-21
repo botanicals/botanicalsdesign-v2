@@ -31,17 +31,9 @@ visitUs:
 
     Sandy, Utah 84070
 
-    ### Summer hours
+    ### Hours
 
-    ##### March 8th – October 31st
-
-    Monday-Saturday 9:30AM – 6:00PM
-
-    ### Winter hours
-
-    ##### Starting Dec 18, 2023
-
-    Please call us for an appointment
+    Monday-Saturday 9:30AM – 5:00PM
   map:
     source: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193912.99854849948!2d-112.0239480164218!3d40.58817010876541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752886894cedb91%3A0xab821b9c26ee88df!2sBotanicals!5e0!3m2!1sen!2sus!4v1578089919277!5m2!1sen!2sus
     title: Botanicals Sandy Retail Location Map
