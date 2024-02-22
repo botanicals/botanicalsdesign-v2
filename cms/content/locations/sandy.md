@@ -33,7 +33,11 @@ visitUs:
 
     ### Hours
 
-    Monday-Saturday 9:30AM – 5:00PM
+    Monday-Friday 9:30AM – 5:00PM
+
+    We are under winter hours until daylight savings. March 10, 2024.
+
+    Please call us to make an appointment and we'll be happy to meet you.
   map:
     source: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193912.99854849948!2d-112.0239480164218!3d40.58817010876541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752886894cedb91%3A0xab821b9c26ee88df!2sBotanicals!5e0!3m2!1sen!2sus!4v1578089919277!5m2!1sen!2sus
     title: Botanicals Sandy Retail Location Map
