@@ -5,10 +5,11 @@ overview: Please send application material
 positions:
   - description: >-
       Botanicals, Inc. in St George, UT is looking for a full-time, and
-      part-time employee to join our pottery shop retail team! We are located on
-      592 North Bluff Street. Our ideal candidate is self-manageable, punctual,
-      and reliable. We love being in good company with all of our staff and
-      enjoy an easy-going atmosphere. Plant people welcome. Come grow with us!
+      part-time employee(s) to join our pottery shop retail team! We are located
+      on 592 North Bluff Street. Our ideal candidate is self-manageable,
+      punctual, and reliable. We love being in good company with all of our
+      staff and enjoy an easy-going atmosphere. Plant people welcome. Come grow
+      with us!
 
 
       **Responsibilities**
