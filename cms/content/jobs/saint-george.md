@@ -1,6 +1,6 @@
 ---
 name: Saint George
-overview: Please send application material
+overview: Please send your resume and cover letter material
   to [dallinw@botanicalsdesign.com](mailto:dallinw@botanicalsdesign.com)
 positions:
   - description: >-
@@ -56,7 +56,7 @@ positions:
       * Self-manageable
 
 
-      Please send your resume and a cover letter or description of why you are interested in this position.
+      Please send your resume and a cover letter or description of why you are interested in this position to [dallinw@botanicalsdesign.com](mailto:dallinw@botanicalsdesign.com)
     title: "Full-Time and Part-Time Retail Associates "
     slug: full-time-retail-associate
 metadata:
