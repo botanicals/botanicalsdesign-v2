@@ -1,14 +1,14 @@
 ---
 name: Saint George
-overview: Please send application material to robyng@botanicalsdesign.com and
-  bradenh@botanicalsdesign.com.
+overview: Please send application material
+  to [dallinw@botanicalsdesign.com](mailto:dallinw@botanicalsdesign.com)
 positions:
   - description: >-
-      Botanicals, Inc. in St George, UT is looking for a full-time employee to
-      join our pottery shop retail team! We are located on 592 North Bluff
-      Street. Our ideal candidate is self-manageable, punctual, and reliable. We
-      love being in good company with all of our staff and enjoy an easy-going
-      atmosphere. Plant people welcome. Come grow with us!
+      Botanicals, Inc. in St George, UT is looking for a full-time, and
+      part-time employee to join our pottery shop retail team! We are located on
+      592 North Bluff Street. Our ideal candidate is self-manageable, punctual,
+      and reliable. We love being in good company with all of our staff and
+      enjoy an easy-going atmosphere. Plant people welcome. Come grow with us!
 
 
       **Responsibilities**
@@ -46,7 +46,7 @@ positions:
       **Qualifications**
 
 
-      * Ability to lift 50lbs+
+      * Ability to lift 30lbs+
 
       * Must be able to pass a background check
 
@@ -56,7 +56,7 @@ positions:
 
 
       Please send your resume and a cover letter or description of why you are interested in this position.
-    title: Full-time Retail Associate (Posted August 2023)
+    title: "Full-Time and Part-Time Retail Associates "
     slug: full-time-retail-associate
 metadata:
   title: Jobs - Botanicals Saint George
