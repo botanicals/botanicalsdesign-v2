@@ -25,6 +25,9 @@ positions:
 
       * Answer phone calls and customer questions
 
+      * **Compensation:** 
+
+        Starting at $13.00 / hr - Increased with BOE (based on experience)
 
       **Qualifications**
 
