@@ -31,11 +31,15 @@ visitUs:
 
     Sandy, Utah 84070
 
-    ### Hours
+    ### Hours For Spring 2024 (March 18, 2024)
 
-    Monday-Friday 9:30AM – 5:00PM
 
-    We are under winter hours until daylight savings. March 10, 2024.
+
+    Monday-Friday 9:30AM – 6:00PM
+
+    Saturday: 10:00-3:00pm*
+
+    \*Weather and staffing permitting
 
     Please call us to make an appointment and we'll be happy to meet you.
   map:
